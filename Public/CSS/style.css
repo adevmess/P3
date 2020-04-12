@@ -1,0 +1,92 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16;
+  font-family: Roboto, "sans-serif";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  background-color: #fff;
+}
+
+.header {
+  text-align: center;
+}
+
+.header.header__heading {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .header.header__heading {
+    padding: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header.header__heading {
+    padding: 1.2rem 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header.header__heading {
+    padding: 1.3rem 0;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .header.header__heading {
+    padding: 1.9rem 0;
+  }
+}
+
+.--outlinePrimary {
+  background: #579c87;
+}
+
+.--outlineTextPrimary {
+  color: #fdcb46;
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 576px) {
+  .--outlineTextPrimary {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .--outlineTextPrimary {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .--outlineTextPrimary {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .--outlineTextPrimary {
+    font-size: 6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

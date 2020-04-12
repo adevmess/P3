@@ -1,0 +1,14 @@
+// breakpoints//
+
+@mixin media ($breakpoint) {
+
+  // si la key existe dans la map 
+  @if map-has-key($breakpoints, $breakpoint) {
+
+    //  alors ecris la media querie avec sa valeur
+    @media only screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      // autorise moi via cette varriable a ecrire du contenu au moment de la saisie 
+      @content;
+    }
+  }
+}

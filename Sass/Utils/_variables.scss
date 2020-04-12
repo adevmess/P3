@@ -1,0 +1,56 @@
+// ColorsMap// 
+$palettes:(outlinePrimary:#579c87,
+  outlineTextPrimary:#fdcb46,
+  backGrSite:#fff,
+  backGrCardNote:#fcdfdb,
+  backGrCardChic:#fff5fe,
+  backGrCardDelice:#f9f9f9,
+  backGrCardPalette:#fdfffd,
+  titleCardNote:#3c1318,
+  titleCardChic:#fff5fe,
+  titleCardDelice:#f9f9f9,
+  titleCardPalette:#fdfffd,
+  subTitleCardNote:#3c1318,
+  subTitleCardChic:#c77412,
+  subTitleCardDelice:#0887fb,
+  subTitleCardPalette:#72bf56,
+  // GradientMusicNote:#,
+  // GradientTitleChic:#,
+  // GradientTitleDelice:#,
+  // GradientTitlePalette:#,
+  textNote:#3c1318,
+  textChicSection1:#c77412,
+  textChicSection2:#a56799,
+  textChicSection3:#6e4ccc);
+
+// breakpoints//
+$breakpoints: (
+  /* ********** Extra Small devices ******** */
+  xs: (max-width: 575px),
+
+  /* ********** Small devices ******** */
+  sm:(min-width: 576px),
+
+  /* ************* Medium devices ******** */
+  md:(min-width: 768px),
+  /* ********** Large devices ******** */
+  lg:(min-width: 992px),
+
+  /* ********** ExtraLarge devices ******** */
+  xl: (min-width: 1199px));
+
+
+$containerMaxWidths: (xsMax: auto,
+  smMin: 540px,
+  mdMin: 720px,
+  lgMin: 960px,
+  xlMin: 1140px);
+
+
+// $fontSize:(xs: 0.9rem,
+//   sm: 1rem,
+//   md: 1.125rem,
+//   lg: 1.25rem,
+//   xl: 1.3rem);
+
+$fontSize:1rem;
