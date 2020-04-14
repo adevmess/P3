@@ -2,49 +2,50 @@
 $palettes:(outlinePrimary:#579c87,
   outlineTextPrimary:#fdcb46,
   backGrSite:#fff,
-  backGrCardNote:#fcdfdb,
-  backGrCardChic:#fff5fe,
-  backGrCardDelice:#f9f9f9,
-  backGrCardPalette:#fdfffd,
-  titleCardNote:#3c1318,
-  titleCardChic:#fff5fe,
-  titleCardDelice:#f9f9f9,
-  titleCardPalette:#fdfffd,
-  subTitleCardNote:#3c1318,
-  subTitleCardChic:#c77412,
-  subTitleCardDelice:#0887fb,
-  subTitleCardPalette:#72bf56,
-  // GradientMusicNote:#,
-  // GradientTitleChic:#,
-  // GradientTitleDelice:#,
-  // GradientTitlePalette:#,
+  backNote:#fcdfdb,
+  backChic:#fff5fe,
+  backDelice:#f9f9f9,
+  backPalette:#fdfffd,
+  titleNote:#3c1318,
+  titleChic:#fff5fe,
+  titleDelice:#f9f9f9,
+  titlePalette:#fdfffd,
+  subTitleNote:#3c1318,
+  subTitleChic:#c77412,
+  subTitleDelice:#0887fb,
+  subTitlePalette:#72bf56,
+  // GradientMusicNote:(#f04e5f,905bfd)
+  // GradientTitleChic:(#e38913,#a366c5)
+  // GradientTitleDelice:(#0022db,#1a91fb)
+  // GradientTitlePalette:(#3d923a,#beff7f)
   textNote:#3c1318,
   textChicSection1:#c77412,
   textChicSection2:#a56799,
   textChicSection3:#6e4ccc);
 
+
 // breakpoints//
 $breakpoints: (
   /* ********** Extra Small devices ******** */
-  xs: (max-width: 575px),
+  xs: (max-width: 549px),
 
   /* ********** Small devices ******** */
-  sm:(min-width: 576px),
+  sm:(min-width: 550px),
 
   /* ************* Medium devices ******** */
-  md:(min-width: 768px),
+  md:(min-width: 760px),
   /* ********** Large devices ******** */
   lg:(min-width: 992px),
 
   /* ********** ExtraLarge devices ******** */
-  xl: (min-width: 1199px));
+  xl: (min-width: 1242px));
 
 
-$containerMaxWidths: (xsMax: auto,
-  smMin: 540px,
-  mdMin: 720px,
-  lgMin: 960px,
-  xlMin: 1140px);
+$containerMaxWidths: (xs: auto,
+  sm: 540px,
+  md: 730px,
+  lg: 900px,
+  xl: 1300px);
 
 
 // $fontSize:(xs: 0.9rem,
@@ -54,3 +55,7 @@ $containerMaxWidths: (xsMax: auto,
 //   xl: 1.3rem);
 
 $fontSize:1rem;
+$boxShadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+$cardheight:19rem;
+$cardwidth: 14rem;
+$minwidth:12.5rem;

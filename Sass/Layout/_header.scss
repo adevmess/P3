@@ -5,22 +5,30 @@
   // display: block;
   &.header__heading {
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 0.9rem 0;
+    // font-size: $fontSize*2;
+    letter-spacing: -0.2rem;
+    font-weight: 900;
+
 
     @include media(sm) {
-      padding: 1rem 0;
+      // padding: 1.3rem 0;
+      font-size: $fontSize*3;
     }
 
     @include media(md) {
-      padding: 1.2rem 0;
+      // padding: 1.4rem 0;
+      font-size: $fontSize*3.2;
     }
 
     @include media(lg) {
-      padding: 1.3rem 0;
+      // padding: 1.6rem 0;
+      font-size: $fontSize*3.3;
     }
 
     @include media(xl) {
-      padding: 1.9rem 0;
+      padding: 2rem 0;
+      font-size: $fontSize*3.4;
     }
   }
 }
@@ -33,23 +41,5 @@
 
 .--outlineTextPrimary {
   color: map-get($palettes, outlineTextPrimary);
-  font-size: $fontSize*2;
-  letter-spacing: -0.1rem;
-  font-weight: 900;
 
-  @include media(sm) {
-    font-size: $fontSize*3;
-  }
-
-  @include media(md) {
-    font-size: $fontSize*4;
-  }
-
-  @include media(lg) {
-    font-size: $fontSize*5;
-  }
-
-  @include media(xl) {
-    font-size: $fontSize*6;
-  }
 }

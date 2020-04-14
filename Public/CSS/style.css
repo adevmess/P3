@@ -10,7 +10,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 16;
-  font-family: Roboto, "sans-serif";
+  font-family: 'Open Sans', "sans-serif";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
@@ -22,36 +22,227 @@ body {
   background-color: #fff;
 }
 
+.containerMain {
+  background: white;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 549px) {
+  .containerMain {
+    max-width: auto;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .containerMain {
+    padding: 1.4rem 0;
+    max-width: 730px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .containerMain {
+    padding: 1.6rem 0;
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 1242px) {
+  .containerMain {
+    padding: 2rem 0;
+    max-width: 1300px;
+  }
+}
+
+.containerMain > .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerMain > .cards .img {
+  width: 1rem;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+
+.containerMain > .cards > .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #3c1318;
+  width: 14rem;
+  min-width: 12.5rem;
+  height: 19rem;
+  margin: 1.1rem;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+          box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+}
+
+@media only screen and (min-width: 550px) {
+  .containerMain > .cards > .card {
+    height: 20.9rem;
+    margin: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .containerMain > .cards > .card {
+    width: 16.8rem;
+    height: 24.7rem;
+  }
+}
+
+.card > .card__headingNote {
+  font-family: 'Devonshire';
+  font-weight: 100;
+}
+
+.card > .card__headingNote::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
+}
+
+.card > .card__subHeadingNote {
+  text-transform: uppercase;
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.card > .card__headingChic {
+  font-family: 'Croissant One';
+  font-weight: 100;
+  font-size: 1rem;
+  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card > .card__subHeadingChic {
+  font-family: 'Noto Serif';
+  font-size: 1.7rem;
+  margin-top: 0;
+  color: #e38913;
+}
+
+.card > .card__headingDelice {
+  font-family: 'Dancing Script';
+  font-weight: 100;
+  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 0.5rem;
+}
+
+.card > .card__subHeadingDelice {
+  font-family: 'Kalam', cursive;
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-top: 0;
+  color: #1a91fb;
+}
+
+.card > .card__headingPalette {
+  font-family: 'Kaushan Script';
+  font-weight: 100;
+  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card > .card__subHeadingPalette {
+  font-family: 'Kalam', cursive;
+  font-weight: 100;
+  font-size: 1.7rem;
+  margin-top: 0;
+  color: #62b24e;
+}
+
+.--backNote {
+  background: #fcdfdb;
+}
+
+.--backChic {
+  background: #fff5fe;
+}
+
+.--backDelice {
+  background: #f9f9f9;
+}
+
+.--backPalette {
+  background: #fdfffd;
+}
+
 .header {
   text-align: center;
 }
 
 .header.header__heading {
   margin: 0;
-  padding: 0.5rem 0;
+  padding: 0.9rem 0;
+  letter-spacing: -0.2rem;
+  font-weight: 900;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 550px) {
   .header.header__heading {
-    padding: 1rem 0;
+    font-size: 3rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .header.header__heading {
-    padding: 1.2rem 0;
+    font-size: 3.2rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .header.header__heading {
-    padding: 1.3rem 0;
+    font-size: 3.3rem;
   }
 }
 
-@media only screen and (min-width: 1199px) {
+@media only screen and (min-width: 1242px) {
   .header.header__heading {
-    padding: 1.9rem 0;
+    padding: 2rem 0;
+    font-size: 3.4rem;
   }
 }
 
@@ -61,32 +252,60 @@ body {
 
 .--outlineTextPrimary {
   color: #fdcb46;
-  font-size: 2rem;
-  letter-spacing: -0.1rem;
-  font-weight: 900;
 }
 
-@media only screen and (min-width: 576px) {
-  .--outlineTextPrimary {
-    font-size: 3rem;
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .footer {
+    font-size: 1.1rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .--outlineTextPrimary {
-    font-size: 4rem;
+@media only screen and (min-width: 760px) {
+  .footer {
+    padding: 1.1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .--outlineTextPrimary {
-    font-size: 5rem;
+  .footer {
+    padding: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
-@media only screen and (min-width: 1199px) {
-  .--outlineTextPrimary {
-    font-size: 6rem;
+@media only screen and (min-width: 1242px) {
+  .footer {
+    padding: 1.3rem;
+    font-size: 1.6rem;
   }
+}
+
+.btn {
+  display: block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  margin-top: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
