@@ -35,17 +35,17 @@ $breakpoints: (
   /* ************* Medium devices ******** */
   md:(min-width: 760px),
   /* ********** Large devices ******** */
-  lg:(min-width: 992px),
+  lg:(min-width: 900px),
 
   /* ********** ExtraLarge devices ******** */
-  xl: (min-width: 1242px));
+  xl: (min-width: 1828px));
 
 
 $containerMaxWidths: (xs: auto,
   sm: 540px,
   md: 730px,
   lg: 900px,
-  xl: 1300px);
+  xl: 1768px);
 
 
 // $fontSize:(xs: 0.9rem,
