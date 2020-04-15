@@ -1,0 +1,35 @@
+.containerMain {
+  margin: 0 auto;
+  background: rgb(255, 255, 255);
+  max-width: auto;
+  padding: 1rem;
+
+  @include media(xs) {
+    max-width: map-get($containerMaxWidths, xs);
+  }
+
+  @include media(sm) {
+    padding: 1.3rem 0;
+    max-width: map-get($containerMaxWidths, sm);
+  }
+
+  @include media(md) {
+    padding: 3rem 0;
+    max-width: map-get($containerMaxWidths, md);
+
+  }
+
+  @include media(lg) {
+    padding: 3rem 0;
+    max-width: map-get($containerMaxWidths, lg);
+  }
+
+  @include media(xl) {
+    max-width: map-get($containerMaxWidths, xl);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    // flex: none;
+  }
+}

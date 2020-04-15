@@ -1,90 +1,49 @@
-.containerMain {
-  margin: 0 auto;
-  background: rgb(255, 255, 255);
-  max-width: auto;
-  padding: 1rem;
+.containerMain>.cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
 
-  @include media(xs) {
-    max-width: map-get($containerMaxWidths, xs);
-  }
-
-  @include media(sm) {
-    padding: 1.3rem 0;
-    max-width: map-get($containerMaxWidths, sm);
-  }
-
-  @include media(md) {
-    padding: 3rem 0;
-    max-width: map-get($containerMaxWidths, md);
-
-  }
-
-  @include media(lg) {
-    padding: 3rem 0;
-    max-width: map-get($containerMaxWidths, lg);
-  }
-
-  @include media(xl) {
-    max-width: map-get($containerMaxWidths, xl);
+  &>.card {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-
-
-  }
-
-  &>.cards {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
+    width: $cardwidth;
+    min-width: $minwidth;
+    height: $cardheight;
+    margin: 1.1rem;
+    box-shadow: $boxShadow;
+    cursor: pointer;
 
-    &>.card {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      width: $cardwidth;
-      min-width: $minwidth;
-      height: $cardheight;
-      margin: 1.1rem;
-      box-shadow: $boxShadow;
-      cursor: pointer;
+    @include media(sm) {
+      height: ($cardheight*1.1);
+      margin: 1.3rem;
+    }
 
-      @include media(sm) {
-        height: ($cardheight*1.1);
-        margin: 1.3rem;
-        // font-size: $fontSize;
-      }
+    @include media(md) {
+      margin: 2.3rem 2.3rem;
+      width: ($cardwidth*1.3);
+      height: ($cardheight*1.4);
+    }
 
-      @include media(md) {
-        margin: 2.3rem 2.3rem;
+    @include media(lg) {
+      width: ($cardwidth*1.6);
+      height: ($cardheight*1.8);
+      margin: 2.5rem 2.5rem;
+      font-size: ($fontSize*1.3);
+    }
 
-        // margin-bottom:
-        width: ($cardwidth*1.3);
-        // width: ($cardwidht*1.5);
-        height: ($cardheight*1.4);
-      }
-
-      @include media(lg) {
-        width: ($cardwidth*1.6);
-        height: ($cardheight*1.8);
-        margin: 2.5rem 2.5rem;
-        font-size: ($fontSize*1.3);
-      }
-
-      @include media(xl) {
-        width: ($cardwidth*1.6);
-        height: ($cardheight*1.8);
-        // margin: 0rem 2rem;
-        font-size: ($fontSize*1.3);
-        // margin-top: 4rem;
-      }
+    @include media(xl) {
+      width: ($cardwidth*1.6);
+      height: ($cardheight*1.55);
+      font-size: ($fontSize*1.3);
+      margin: 1rem 2.5rem;
     }
   }
-
 }
+
+
 
 .card {
 
@@ -130,9 +89,7 @@
   &>.card__headingChic {
     font-family: 'Croissant One';
     font-weight: 100;
-    // text-align: center;
     font-size: 0.9rem;
-    // color: linear-gradient(#e38913, #a366c5);
     background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -239,13 +196,10 @@
 
   background: map-get($palettes, backNote);
 
-
-
 }
 
 .--backChic {
   background: map-get($palettes, backChic);
-
 }
 
 .--backDelice {
