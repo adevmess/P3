@@ -1,6 +1,11 @@
 .containerMain__heading {
   font-size: 1.2rem;
   text-align: center;
+
+  @include media(md) {
+    font-size: 1.8rem;
+  }
+
 }
 
 
@@ -29,24 +34,34 @@
     box-shadow: none;
     padding-right: 0.5rem;
 
+    @include media(md) {
+      font-size: 1.9rem;
+    }
+
     &::before {
       content: "";
       display: block;
       width: 100%;
       height: 2rem;
       background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
+
+      @include media(md) {
+        height: 3rem;
+        width: 200%;
+      }
+
+      @include media(lg) {
+        height: 4rem;
+        width: 200%;
+      }
     }
 
-  }
-
-  @include media(sm) {
-    // margin: 1.1rem;
-  }
-
-  @include media(md) {
-    margin: 1.33rem;
 
   }
+
+  @include media(sm) {}
+
+
 
   @include media(lg) {}
 
@@ -80,22 +95,63 @@
 
   &>.sect__subHeadingNote {
     text-align: center;
-    color: rgb(34, 134, 55);
-    // flex: none;
     display: block;
-    overflow: hidden;
 
-    // &::after {
-    //   content: "";
-    //   // position: fixed;
-    //   display: block;
-    //   width: 2rem;
-    //   height: 1rem;
-    //   background: url("../../Public/Images/rightstraightNoteEnchante-\ 3.svg") center center /contain no-repeat;
-    //   transform: translate(12rem, 0rem);
-    //   background-color: blue;
-    //   // margin-right: 2rem;
-    // }
+
+
+
+
+    @include media(lg) {}
+
+    @include media(xl) {}
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 0.5rem;
+      background: url("../../Public/Images/rightstraightNoteEnchante-\ 3.svg") center center /contain no-repeat;
+      transform: translate(8rem, -1rem);
+
+      @include media(xsSm) {
+        transform: translate(14rem, -1rem);
+      }
+
+      @include media(sm) {
+        transform: translate(20.5rem, -1rem);
+      }
+
+      @include media(md) {
+        transform: translate(23.7rem, -1rem);
+        height: 0.4rem;
+      }
+
+      @include media(lg) {
+        transform: translate(30.2rem, -1rem);
+        height: 0.5rem;
+      }
+
+      @include media(xl) {
+        transform: translate(34.7rem, -1rem);
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 0.5rem;
+      background: url("../../Public/Images/leftstraightNoteEnchante.svg") center center /contain no-repeat;
+      transform: translate(-1.9rem, 1rem);
+
+      @include media(sm) {
+        transform: translate(-1.3rem, 1rem);
+      }
+
+      @include media(md) {
+        transform: translate(-1.2rem, 1rem);
+      }
+    }
   }
 
   &>ul>li {
@@ -110,7 +166,6 @@
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
-    // padding-top: 0rem;
 
     @include media(sm) {
       content: attr(data-count);
@@ -135,10 +190,6 @@
   }
 }
 
-
-
-
-
 .footerNote {
   padding-top: 1rem;
   padding-bottom: 3rem;
@@ -146,34 +197,26 @@
   font-weight: 100;
   font-size: 1.3rem;
 
+  @include media(md) {
+    font-size: 1.8rem;
+  }
+
+
   &::before {
     content: "";
     display: block;
     width: 100%;
     height: 1.8rem;
     background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
-    transform: translate(-4.9rem, 1.6rem)
+    transform: translate(-4.9rem, 1.6rem);
+
+    @include media(md) {
+      transform: translate(-6.2rem, 1.9rem);
+
+    }
   }
 }
 
 .--backNote {
   background: map-get($palettes, backNote);
 }
-
-
-// &>.card__subHeadingNote {
-//   text-transform: uppercase;
-//   font-family: 'Kalam', cursive;
-//   font-weight: 400;
-//   font-size: 1.7rem;
-//   margin-top: 0;
-
-//   @include media(md) {
-//     font-size: 1.9rem;
-//   }
-
-//   @include media(lg) {
-//     font-size: 2rem;
-//   }
-
-// 

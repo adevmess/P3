@@ -37,6 +37,7 @@ li {
   background: white;
   max-width: auto;
   padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 469px) {
@@ -87,6 +88,12 @@ li {
   text-align: center;
 }
 
+@media only screen and (min-width: 625px) {
+  .containerMain__heading {
+    font-size: 1.8rem;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +133,12 @@ li {
   padding-right: 0.5rem;
 }
 
+@media only screen and (min-width: 625px) {
+  .card > .card__headingNote {
+    font-size: 1.9rem;
+  }
+}
+
 .card > .card__headingNote::before {
   content: "";
   display: block;
@@ -135,8 +148,16 @@ li {
 }
 
 @media only screen and (min-width: 625px) {
-  .card {
-    margin: 1.33rem;
+  .card > .card__headingNote::before {
+    height: 3rem;
+    width: 200%;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .card > .card__headingNote::before {
+    height: 4rem;
+    width: 200%;
   }
 }
 
@@ -170,9 +191,78 @@ li {
 
 .sect > .sect__subHeadingNote {
   text-align: center;
-  color: #228637;
   display: block;
-  overflow: hidden;
+}
+
+.sect > .sect__subHeadingNote::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/rightstraightNoteEnchante- 3.svg") center center/contain no-repeat;
+  -webkit-transform: translate(8rem, -1rem);
+          transform: translate(8rem, -1rem);
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingNote::after {
+    -webkit-transform: translate(14rem, -1rem);
+            transform: translate(14rem, -1rem);
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingNote::after {
+    -webkit-transform: translate(20.5rem, -1rem);
+            transform: translate(20.5rem, -1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingNote::after {
+    -webkit-transform: translate(23.7rem, -1rem);
+            transform: translate(23.7rem, -1rem);
+    height: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingNote::after {
+    -webkit-transform: translate(30.2rem, -1rem);
+            transform: translate(30.2rem, -1rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingNote::after {
+    -webkit-transform: translate(34.7rem, -1rem);
+            transform: translate(34.7rem, -1rem);
+  }
+}
+
+.sect > .sect__subHeadingNote::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/leftstraightNoteEnchante.svg") center center/contain no-repeat;
+  -webkit-transform: translate(-1.9rem, 1rem);
+          transform: translate(-1.9rem, 1rem);
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingNote::before {
+    -webkit-transform: translate(-1.3rem, 1rem);
+            transform: translate(-1.3rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingNote::before {
+    -webkit-transform: translate(-1.2rem, 1rem);
+            transform: translate(-1.2rem, 1rem);
+  }
 }
 
 @media only screen and (min-width: 545px) {
@@ -224,6 +314,12 @@ li {
   font-size: 1.3rem;
 }
 
+@media only screen and (min-width: 625px) {
+  .footerNote {
+    font-size: 1.8rem;
+  }
+}
+
 .footerNote::before {
   content: "";
   display: block;
@@ -232,6 +328,13 @@ li {
   background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
   -webkit-transform: translate(-4.9rem, 1.6rem);
           transform: translate(-4.9rem, 1.6rem);
+}
+
+@media only screen and (min-width: 625px) {
+  .footerNote::before {
+    -webkit-transform: translate(-6.2rem, 1.9rem);
+            transform: translate(-6.2rem, 1.9rem);
+  }
 }
 
 .--backNote {
