@@ -1,0 +1,592 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16;
+  font-family: 'Open Sans', "sans-serif";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.containerMain {
+  margin: 0 auto;
+  background: white;
+  max-width: auto;
+  padding: 1rem;
+  margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 469px) {
+  .containerMain {
+    min-width: 16rem;
+    width: 14rem;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 360px;
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 620px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 765px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 880px;
+  }
+}
+
+.containerMain__heading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 625px) {
+  .containerMain__heading {
+    font-size: 1.8rem;
+  }
+}
+
+.card {
+  font-family: 'Noto Serif';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding-top: 1rem;
+  overflow: hidden;
+  padding-bottom: 2.5rem;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+          box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 545px) {
+  .card {
+    min-width: 20rem;
+  }
+}
+
+.card > .card__headingChic {
+  text-align: center;
+  font-family: 'Croissant One';
+  font-weight: 100;
+  font-size: 1.3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-right: 0.5rem;
+  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+  background-clip: text;
+  padding-bottom: 1rem;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 625px) {
+  .card > .card__headingChic {
+    font-size: 1.9rem;
+  }
+}
+
+.sect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 95%;
+  font-family: 'Noto Serif';
+}
+
+@media only screen and (min-width: 545px) {
+  .sect {
+    padding: auto 1rem;
+    font-size: 0.9rem;
+    font-family: 'Noto Serif';
+    text-align: left;
+    width: 95%;
+  }
+}
+
+.sect > .sect__subHeadingChicstart {
+  text-align: center;
+  display: block;
+}
+
+.sect > .sect__subHeadingChicstart::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.2rem;
+  background: url("../../Public/Images/RightStraightChicFrancestart.svg") center center/contain no-repeat;
+  -webkit-transform: translate(9rem, -1.8rem);
+          transform: translate(9rem, -1.8rem);
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingChicstart::after {
+    -webkit-transform: translate(15rem, -0.8rem);
+            transform: translate(15rem, -0.8rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicstart::after {
+    -webkit-transform: translate(20.5rem, -1rem);
+            transform: translate(20.5rem, -1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicstart::after {
+    -webkit-transform: translate(23.5rem, -1rem);
+            transform: translate(23.5rem, -1rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicstart::after {
+    -webkit-transform: translate(30.7rem, -1rem);
+            transform: translate(30.7rem, -1rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicstart::after {
+    -webkit-transform: translate(36.7rem, -1rem);
+            transform: translate(36.7rem, -1rem);
+  }
+}
+
+.sect > .sect__subHeadingChicstart::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/leftStraightChicFrancestart.svg") center center/contain no-repeat;
+  -webkit-transform: translate(-2.6rem, 1rem);
+          transform: translate(-2.6rem, 1rem);
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicstart::before {
+    -webkit-transform: translate(-1.3rem, 1rem);
+            transform: translate(-1.3rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicstart::before {
+    -webkit-transform: translate(-1.2rem, 0.8rem);
+            transform: translate(-1.2rem, 0.8rem);
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicstart::before {
+    -webkit-transform: translate(-2.2rem, 0.8rem);
+            transform: translate(-2.2rem, 0.8rem);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicstart::before {
+    -webkit-transform: translate(-3.2rem, 0.8rem);
+            transform: translate(-3.2rem, 0.8rem);
+  }
+}
+
+.sect > .sect__subHeadingChicdessert {
+  text-align: center;
+  display: block;
+}
+
+.sect > .sect__subHeadingChicdessert::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/RightStraightChicFrancedessert.svg") center center/contain no-repeat;
+  -webkit-transform: translate(9rem, -2rem);
+          transform: translate(9rem, -2rem);
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingChicdessert::after {
+    -webkit-transform: translate(15rem, -0.8rem);
+            transform: translate(15rem, -0.8rem);
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdessert::after {
+    -webkit-transform: translate(20.5rem, -0.8rem);
+            transform: translate(20.5rem, -0.8rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicdessert::after {
+    -webkit-transform: translate(23.7rem, -0.8rem);
+            transform: translate(23.7rem, -0.8rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdessert::after {
+    -webkit-transform: translate(30.8rem, -0.8rem);
+            transform: translate(30.8rem, -0.8rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicdessert::after {
+    -webkit-transform: translate(36.7rem, -0.9rem);
+            transform: translate(36.7rem, -0.9rem);
+  }
+}
+
+.sect > .sect__subHeadingChicdessert::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/leftStraightChicFrancedessert.svg") center center/contain no-repeat;
+  -webkit-transform: translate(-2.4rem, 1rem);
+          transform: translate(-2.4rem, 1rem);
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdessert::before {
+    -webkit-transform: translate(-1.3rem, 1rem);
+            transform: translate(-1.3rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicdessert::before {
+    -webkit-transform: translate(-1.2rem, 0.9rem);
+            transform: translate(-1.2rem, 0.9rem);
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdessert::before {
+    -webkit-transform: translate(-2.2rem, 0.9rem);
+            transform: translate(-2.2rem, 0.9rem);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicdessert::before {
+    -webkit-transform: translate(-3.2rem, 0.9rem);
+            transform: translate(-3.2rem, 0.9rem);
+  }
+}
+
+.sect > .sect__subHeadingChicdish {
+  text-align: center;
+  display: block;
+}
+
+.sect > .sect__subHeadingChicdish::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/RightStraightChicFrancedish.svg") center center/contain no-repeat;
+  -webkit-transform: translate(9rem, -0.8rem);
+          transform: translate(9rem, -0.8rem);
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingChicdish::after {
+    -webkit-transform: translate(15rem, -0.8rem);
+            transform: translate(15rem, -0.8rem);
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdish::after {
+    -webkit-transform: translate(20.5rem, -0.8rem);
+            transform: translate(20.5rem, -0.8rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicdish::after {
+    -webkit-transform: translate(23.7rem, -0.8rem);
+            transform: translate(23.7rem, -0.8rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdish::after {
+    -webkit-transform: translate(31.2rem, -1rem);
+            transform: translate(31.2rem, -1rem);
+    height: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicdish::after {
+    -webkit-transform: translate(36.7rem, -1rem);
+            transform: translate(36.7rem, -1rem);
+  }
+}
+
+.sect > .sect__subHeadingChicdish::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 0.5rem;
+  background: url("../../Public/Images/leftStraightChicFrancedish.svg") center center/contain no-repeat;
+  -webkit-transform: translate(-2.9rem, 1rem);
+          transform: translate(-2.9rem, 1rem);
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdish::before {
+    -webkit-transform: translate(-1.3rem, 1rem);
+            transform: translate(-1.3rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingChicdish::before {
+    -webkit-transform: translate(-1.2rem, 1rem);
+            transform: translate(-1.2rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdish::before {
+    -webkit-transform: translate(-2.2rem, 1rem);
+            transform: translate(-2.2rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sect > .sect__subHeadingChicdish::before {
+    -webkit-transform: translate(-3.2rem, 1rem);
+            transform: translate(-3.2rem, 1rem);
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > ul > li {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+}
+
+.sect > ul > li::after {
+  content: attr(data-count);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > ul > li::after {
+    content: attr(data-count);
+    float: right;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > ul > li::after {
+    content: attr(data-count);
+    float: right;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > ul > li::after {
+    content: attr(data-count);
+    float: right;
+  }
+}
+
+.--backChic {
+  background: #fff5fe;
+}
+
+.--starter {
+  color: #c77412;
+}
+
+.--dish {
+  color: #a56799;
+}
+
+.--dessert {
+  color: #6e4ccc;
+}
+
+.header {
+  text-align: center;
+}
+
+.header.header__heading {
+  margin: 0 auto;
+  padding: 0.6rem 0;
+  font-size: 2.8rem;
+  letter-spacing: -0.2rem;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 545px) {
+  .header.header__heading {
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .header.header__heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .header.header__heading {
+    font-size: 4.7rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header.header__heading {
+    padding: 1.8rem 0;
+    font-size: 6rem;
+  }
+}
+
+.--outlinePrimary {
+  background: #579c87;
+}
+
+.--outlineTextPrimary {
+  color: #fdcb46;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .footer {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .footer {
+    padding: 1.1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .footer {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer {
+    padding: 1.3rem;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style2.css.map */

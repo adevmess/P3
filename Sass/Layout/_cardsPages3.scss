@@ -1,0 +1,251 @@
+// &>.card__headingChic {
+//   font-family: 'Croissant One';
+//   font-weight: 100;
+//   font-size: 0.9rem;
+//   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+//   background-clip: text;
+//   -webkit-text-fill-color: transparent;
+
+//   @include media(md) {
+//     font-size: 1.1rem;
+//   }
+
+//   @include media(lg) {
+//     font-size: 1.6rem;
+//   }
+
+// }
+
+// &>.card__subHeadingChic {
+//   font-family: 'Noto Serif';
+//   font-size: 1.6rem;
+//   margin-top: 0;
+//   color: #e38913;
+
+//   @include media(md) {
+//     font-size: 1.8rem;
+//   }
+
+//   @include media(lg) {
+//     font-size: 1.9rem;
+//   }
+// }
+.containerMain__heading {
+  font-size: 1.2rem;
+  text-align: center;
+
+  @include media(md) {
+    font-size: 1.8rem;
+  }
+
+}
+
+
+.card {
+  font-family: 'Noto Serif';
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  padding-top: 1rem;
+  overflow: hidden;
+
+
+  // margin-bottom: 6rem;
+  box-shadow: $boxShadow;
+  cursor: pointer;
+
+  @include media(sm) {
+    min-width: $minwidth;
+  }
+
+  &>.card__headingChic {
+    // text-align: center;
+    font-family: 'Croissant One';
+    font-weight: 100;
+    font-size: 1.3rem;
+    box-shadow: none;
+    padding-right: 0.5rem;
+    background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    @include media(md) {
+      font-size: 1.9rem;
+    }
+
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   width: 100%;
+    //   height: 2rem;
+    //   background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
+
+    //   @include media(md) {
+    //     height: 3rem;
+    //     width: 200%;
+    //   }
+
+    //   @include media(lg) {
+    //     height: 4rem;
+    //     width: 200%;
+    //   }
+    // }
+
+
+  }
+
+  @include media(sm) {}
+
+
+
+  @include media(lg) {}
+
+  @include media(xl) {}
+}
+
+
+.sect {
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  // font-family: 'Kalam';
+  text-align: center;
+  width: 95%;
+  font-family: 'Noto Serif';
+
+  @include media(sm) {
+    padding: auto 1rem;
+    font-size: 0.9rem;
+    font-family: 'Noto Serif';
+    text-align: left;
+    width: 95%;
+  }
+
+  @include media(md) {}
+
+  @include media(lg) {}
+
+  @include media(xl) {}
+
+
+
+  &>.sect__subHeadingChic {
+    text-align: center;
+    display: block;
+
+
+
+
+
+    @include media(lg) {}
+
+    @include media(xl) {}
+
+    &::after {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 0.5rem;
+      background: url("../../Public/Images/RightStraightChicFrance.svg") center center /contain no-repeat;
+      transform: translate(8rem, -1rem);
+
+      @include media(xsSm) {
+        transform: translate(14rem, -1rem);
+      }
+
+      @include media(sm) {
+        transform: translate(20.5rem, -1rem);
+      }
+
+      @include media(md) {
+        transform: translate(23.7rem, -1rem);
+        height: 0.4rem;
+      }
+
+      @include media(lg) {
+        transform: translate(30.2rem, -1rem);
+        height: 0.5rem;
+      }
+
+      @include media(xl) {
+        transform: translate(34.7rem, -1rem);
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30%;
+      height: 0.5rem;
+      background: url("../../Public/Images/leftStraightChicFrance.svg") center center /contain no-repeat;
+      transform: translate(-1.9rem, 1rem);
+
+      @include media(sm) {
+        transform: translate(-1.3rem, 1rem);
+      }
+
+      @include media(md) {
+        transform: translate(-1.2rem, 1rem);
+      }
+    }
+  }
+
+  &>ul>li {
+    @include media(sm) {
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &>ul>li::after {
+    content: attr(data-count);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    @include media(sm) {
+      content: attr(data-count);
+      float: right;
+      padding: 0 1rem;
+
+    }
+
+    @include media(md) {
+      content: attr(data-count);
+      float: right;
+      padding: 0 1rem;
+    }
+
+    @include media(lg) {
+      content: attr(data-count);
+      float: right;
+
+    }
+
+    @include media(xl) {}
+  }
+}
+
+
+
+.--backChic {
+  background: map-get($palettes, backChic);
+}
+
+.--starter {
+  color: map-get($palettes, textChicSection1);
+}
+
+.--dish {
+  color: map-get($palettes, textChicSection2);
+}
+
+.--dessert {
+  color: map-get($palettes, textChicSection3);
+}

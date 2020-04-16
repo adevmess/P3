@@ -9,7 +9,7 @@
         "../../Sass/Utils/_mixins.scss",
         "../../Sass/Utils/_functions.scss",
         "../../Sass/Layout/_containerMainPages.scss",
-        "../../Sass/Layout/_cardsPages.scss",
+        "../../Sass/Layout/_cardsPages1.scss",
         "../../Sass/Layout/_header.scss",
         "../../Sass/Layout/_footer.scss"
     ],
