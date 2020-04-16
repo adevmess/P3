@@ -22,6 +22,16 @@ body {
   background-color: #fff;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 .containerMain {
   margin: 0 auto;
   background: white;

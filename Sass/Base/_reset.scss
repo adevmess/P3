@@ -2,6 +2,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
+
 }
 
 html,
@@ -20,4 +21,15 @@ body {
 
 body {
   background-color: #fff;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  list-style: none;
 }

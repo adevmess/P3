@@ -1,0 +1,323 @@
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 16;
+  font-family: 'Open Sans', "sans-serif";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+body {
+  background-color: #fff;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.containerMain {
+  margin: 0 auto;
+  background: white;
+  max-width: auto;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 624px) {
+  .containerMain {
+    max-width: auto;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerMain {
+    padding: 3rem 0;
+    max-width: 765px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .containerMain {
+    padding: 3rem 0;
+    max-width: 880;
+  }
+}
+
+@media only screen and (min-width: 1828px) {
+  .containerMain {
+    max-width: 1768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.containerMain {
+  padding: 0 2em;
+}
+
+.containerMain__heading {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+          box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 625px) {
+  .card {
+    min-width: 35rem;
+  }
+}
+
+.card > .card__headingNote {
+  font-family: 'Devonshire';
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+.card > .card__headingNote::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2rem;
+  background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
+}
+
+@media only screen and (min-width: 625px) {
+  .card {
+    margin: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 3rem;
+  }
+}
+
+.starter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-family: 'Kalam';
+  text-align: center;
+  width: 95%;
+}
+
+@media only screen and (min-width: 625px) {
+  .starter {
+    padding: auto 1rem;
+    font-size: 0.9rem;
+    font-family: 'Kalam';
+    text-align: left;
+    width: 95%;
+  }
+}
+
+.starter > .starter__subHeadingNote {
+  text-align: center;
+}
+
+@media only screen and (min-width: 625px) {
+  .starter > ul > li {
+    text-align: left;
+    padding-bottom: 1rem;
+  }
+}
+
+.starter > ul > li::after {
+  content: attr(data-count);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 625px) {
+  .starter > ul > li::after {
+    content: attr(data-count);
+    float: right;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .starter > ul > li::after {
+    content: attr(data-count);
+    float: right;
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .starter > ul > li::after {
+    content: attr(data-count);
+    float: right;
+  }
+}
+
+.footerNote::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1rem;
+  background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
+}
+
+.--backNote {
+  background: #fcdfdb;
+}
+
+.header {
+  text-align: center;
+}
+
+.header.header__heading {
+  margin: 0 auto;
+  padding: 0.6rem 0;
+  font-size: 2.8rem;
+  letter-spacing: -0.2rem;
+  font-weight: 900;
+}
+
+@media only screen and (min-width: 625px) {
+  .header.header__heading {
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header.header__heading {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header.header__heading {
+    font-size: 4.7rem;
+  }
+}
+
+@media only screen and (min-width: 1828px) {
+  .header.header__heading {
+    padding: 1.8rem 0;
+    font-size: 6rem;
+  }
+}
+
+.--outlinePrimary {
+  background: #579c87;
+}
+
+.--outlineTextPrimary {
+  color: #fdcb46;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 625px) {
+  .footer {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 1.1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .footer {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1828px) {
+  .footer {
+    padding: 1.3rem;
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=style1.css.map */

@@ -1,0 +1,154 @@
+.containerMain {
+  padding: 0 2em;
+  // display: flex;
+
+  &__heading {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+
+  box-shadow: $boxShadow;
+  cursor: pointer;
+
+  @include media(sm) {
+    min-width: $minwidth;
+  }
+
+  &>.card__headingNote {
+    font-family: 'Devonshire';
+    font-weight: 100;
+    font-size: 1.3rem;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2rem;
+      background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
+    }
+
+  }
+
+  @include media(sm) {
+    margin: 1.1rem;
+  }
+
+  @include media(md) {
+    margin: 3rem;
+
+  }
+
+  @include media(lg) {}
+
+  @include media(xl) {}
+}
+
+.starter {
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-family: 'Kalam';
+  text-align: center;
+  width: 95%;
+
+  @include media(sm) {
+    padding: auto 1rem;
+    font-size: 0.9rem;
+    font-family: 'Kalam';
+    text-align: left;
+    width: 95%;
+  }
+
+  @include media(md) {}
+
+  @include media(lg) {}
+
+  @include media(xl) {}
+
+  &>.starter__subHeadingNote {
+    text-align: center;
+  }
+
+  &>ul>li {
+    @include media(sm) {
+      text-align: left;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &>ul>li::after {
+    content: attr(data-count);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+
+    @include media(sm) {
+      content: attr(data-count);
+      float: right;
+      padding: 0 1rem;
+
+    }
+
+    @include media(md) {
+      content: attr(data-count);
+      float: right;
+      padding: 0 1rem;
+    }
+
+    @include media(lg) {
+      content: attr(data-count);
+      float: right;
+
+    }
+
+    @include media(xl) {}
+  }
+}
+
+
+
+
+
+.footerNote {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1rem;
+    background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
+  }
+}
+
+.--backNote {
+  background: map-get($palettes, backNote);
+}
+
+
+// &>.card__subHeadingNote {
+//   text-transform: uppercase;
+//   font-family: 'Kalam', cursive;
+//   font-weight: 400;
+//   font-size: 1.7rem;
+//   margin-top: 0;
+
+//   @include media(md) {
+//     font-size: 1.9rem;
+//   }
+
+//   @include media(lg) {
+//     font-size: 2rem;
+//   }
+
+// 

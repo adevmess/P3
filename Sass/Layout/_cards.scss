@@ -4,6 +4,8 @@
   flex-flow: row wrap;
   align-items: center;
 
+
+
   &>.card {
     display: flex;
     flex-flow: column wrap;
@@ -15,6 +17,7 @@
     margin: 1.1rem;
     box-shadow: $boxShadow;
     cursor: pointer;
+
 
     @include media(sm) {
       height: ($cardheight*1.1);
@@ -46,6 +49,8 @@
 
 
 .card {
+
+
 
   &>.card__headingNote {
     font-family: 'Devonshire';
@@ -195,6 +200,7 @@
 .--backNote {
 
   background: map-get($palettes, backNote);
+
 
 }
 
