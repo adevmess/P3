@@ -39,53 +39,47 @@ li {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 624px) {
+@media only screen and (max-width: 469px) {
   .containerMain {
-    max-width: auto;
+    min-width: 16rem;
+    width: 14rem;
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 360px;
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .containerMain {
+    padding: 1.3rem 0;
+    max-width: 540px;
   }
 }
 
 @media only screen and (min-width: 625px) {
   .containerMain {
     padding: 1.3rem 0;
-    max-width: 700px;
+    max-width: 620px;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 780px) {
   .containerMain {
-    padding: 3rem 0;
+    padding: 1.3rem 0;
     max-width: 765px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .containerMain {
-    padding: 3rem 0;
-    max-width: 880;
+    padding: 1.3rem 0;
+    max-width: 880px;
   }
-}
-
-@media only screen and (min-width: 1828px) {
-  .containerMain {
-    max-width: 1768px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-  }
-}
-
-.containerMain {
-  padding: 0 2em;
 }
 
 .containerMain__heading {
@@ -99,8 +93,8 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -110,14 +104,16 @@ li {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  padding-top: 1rem;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
   cursor: pointer;
 }
 
-@media only screen and (min-width: 625px) {
+@media only screen and (min-width: 545px) {
   .card {
-    min-width: 35rem;
+    min-width: 20rem;
   }
 }
 
@@ -125,6 +121,9 @@ li {
   font-family: 'Devonshire';
   font-weight: 100;
   font-size: 1.3rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-right: 0.5rem;
 }
 
 .card > .card__headingNote::before {
@@ -137,17 +136,11 @@ li {
 
 @media only screen and (min-width: 625px) {
   .card {
-    margin: 1.1rem;
+    margin: 1.33rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .card {
-    margin: 3rem;
-  }
-}
-
-.starter {
+.sect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,8 +158,8 @@ li {
   width: 95%;
 }
 
-@media only screen and (min-width: 625px) {
-  .starter {
+@media only screen and (min-width: 545px) {
+  .sect {
     padding: auto 1rem;
     font-size: 0.9rem;
     font-family: 'Kalam';
@@ -175,18 +168,21 @@ li {
   }
 }
 
-.starter > .starter__subHeadingNote {
+.sect > .sect__subHeadingNote {
   text-align: center;
+  color: #228637;
+  display: block;
+  overflow: hidden;
 }
 
-@media only screen and (min-width: 625px) {
-  .starter > ul > li {
+@media only screen and (min-width: 545px) {
+  .sect > ul > li {
     text-align: left;
     padding-bottom: 1rem;
   }
 }
 
-.starter > ul > li::after {
+.sect > ul > li::after {
   content: attr(data-count);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,38 +191,47 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 1rem;
-  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > ul > li::after {
+    content: attr(data-count);
+    float: right;
+    padding: 0 1rem;
+  }
 }
 
 @media only screen and (min-width: 625px) {
-  .starter > ul > li::after {
+  .sect > ul > li::after {
     content: attr(data-count);
     float: right;
     padding: 0 1rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .starter > ul > li::after {
+@media only screen and (min-width: 780px) {
+  .sect > ul > li::after {
     content: attr(data-count);
     float: right;
-    padding: 0 1rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
-  .starter > ul > li::after {
-    content: attr(data-count);
-    float: right;
-  }
+.footerNote {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-family: 'Devonshire';
+  font-weight: 100;
+  font-size: 1.3rem;
 }
 
 .footerNote::before {
   content: "";
   display: block;
   width: 100%;
-  height: 1rem;
+  height: 1.8rem;
   background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
+  -webkit-transform: translate(-4.9rem, 1.6rem);
+          transform: translate(-4.9rem, 1.6rem);
 }
 
 .--backNote {
@@ -245,25 +250,25 @@ li {
   font-weight: 900;
 }
 
-@media only screen and (min-width: 625px) {
+@media only screen and (min-width: 545px) {
   .header.header__heading {
     font-size: 3.7rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 625px) {
   .header.header__heading {
     font-size: 4.5rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 780px) {
   .header.header__heading {
     font-size: 4.7rem;
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 900px) {
   .header.header__heading {
     padding: 1.8rem 0;
     font-size: 6rem;
@@ -293,28 +298,28 @@ li {
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 625px) {
+@media only screen and (min-width: 545px) {
   .footer {
     padding: 1rem;
     font-size: 1.3rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 625px) {
   .footer {
     padding: 1.1rem;
     font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 780px) {
   .footer {
     padding: 1.2rem;
     font-size: 1.5rem;
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 900px) {
   .footer {
     padding: 1.3rem;
     font-size: 1.6rem;

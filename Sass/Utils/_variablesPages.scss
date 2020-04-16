@@ -25,31 +25,54 @@ $palettes:(outlinePrimary:#579c87,
 
 
 // breakpoints//
+// $breakpoints: (
+//   /* ********** Extra Small devices ******** */
+//   xs: (max-width: 360px),
+
+//   /* ********** Small devices ******** */
+//   sm:(min-width: 625px),
+
+//   /* ************* Medium devices ******** */
+//   md:(min-width: 768px),
+//   /* ********** Large devices ******** */
+//   lg:(min-width: 900px),
+
+//   /* ********** ExtraLarge devices ******** */
+//   xl: (min-width: 1828px));
+// breakpoints//
 $breakpoints: (
   /* ********** Extra Small devices ******** */
-  xs: (max-width: 624px),
-
+  xs: (max-width: 469px),
+  /* ********** between extra/Small devices ******** */
+  xsSm: (min-width: 470px),
   /* ********** Small devices ******** */
-  sm:(min-width: 625px),
+  sm:(min-width: 545px),
 
   /* ************* Medium devices ******** */
-  md:(min-width: 768px),
+  md:(min-width: 625px),
   /* ********** Large devices ******** */
-  lg:(min-width: 900px),
+  lg:(min-width: 780px),
 
   /* ********** ExtraLarge devices ******** */
-  xl: (min-width: 1828px));
+  xl: (min-width: 900px));
 
 
-$containerMaxWidths: (xs: auto,
-  sm: 700px,
-  md: 765px,
-  lg: 880,
-  xl: 1768px);
+// $containerMaxWidths: (xs: auto,
+//   sm: 600px,
+//   md: 765px,
+//   lg: 880,
+//   xl: 1768px);
+$containerMaxWidths: (xs: 350px,
+  xsSm: 360px,
+  sm: 540px,
+  md: 620px,
+  lg: 765px,
+  xl: 880px);
 
 
 $fontSize:1rem;
 $boxShadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
 $cardheight:19rem;
 $cardwidth: 14rem;
-$minwidth:35rem;
+// $minwidth:35rem;
+$minwidth:20rem;
