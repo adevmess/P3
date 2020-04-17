@@ -39,16 +39,16 @@ li {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 549px) {
+@media only screen and (max-width: 510px) {
   .containerMain {
     max-width: auto;
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 511px) {
   .containerMain {
     padding: 1.3rem 0;
-    max-width: 540px;
+    max-width: 600px;
   }
 }
 
@@ -66,9 +66,9 @@ li {
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 1300px) {
   .containerMain {
-    max-width: 1768px;
+    max-width: 1450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,19 +114,20 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 14rem;
+  width: 18.2rem;
   min-width: 12.5rem;
-  height: 19rem;
+  height: 24.2rem;
   margin: 1.1rem;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
   cursor: pointer;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 511px) {
   .containerMain > .cards > .card {
-    height: 20.9rem;
+    height: 35.2rem;
     margin: 1.3rem;
+    width: 26.6rem;
   }
 }
 
@@ -134,25 +135,26 @@ li {
   .containerMain > .cards > .card {
     margin: 2.3rem 2.3rem;
     width: 18.2rem;
-    height: 26.6rem;
+    height: 30.8rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .containerMain > .cards > .card {
     width: 22.4rem;
-    height: 34.2rem;
+    height: 39.6rem;
     margin: 2.5rem 2.5rem;
     font-size: 1.3rem;
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 1300px) {
   .containerMain > .cards > .card {
-    width: 22.4rem;
-    height: 29.45rem;
+    width: 14rem;
+    height: 26.4rem;
     font-size: 1.3rem;
     margin: 1rem 2.5rem;
+    text-align: center;
   }
 }
 
@@ -160,6 +162,12 @@ li {
   font-family: 'Devonshire';
   font-weight: 100;
   font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 511px) {
+  .card > .card__headingNote {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -190,6 +198,12 @@ li {
   margin-top: 0;
 }
 
+@media only screen and (min-width: 511px) {
+  .card > .card__subHeadingNote {
+    font-size: 1.9rem;
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .card > .card__subHeadingNote {
     font-size: 1.9rem;
@@ -211,6 +225,12 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
+@media only screen and (min-width: 511px) {
+  .card > .card__headingChic {
+    font-size: 1.6rem;
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .card > .card__headingChic {
     font-size: 1.1rem;
@@ -228,6 +248,12 @@ li {
   font-size: 1.6rem;
   margin-top: 0;
   color: #e38913;
+}
+
+@media only screen and (min-width: 511px) {
+  .card > .card__subHeadingChic {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -252,9 +278,15 @@ li {
   font-size: 1.3rem;
 }
 
+@media only screen and (min-width: 511px) {
+  .card > .card__headingDelice {
+    font-size: 2.2rem;
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .card > .card__headingDelice {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 }
 
@@ -270,6 +302,12 @@ li {
   font-size: 1.7rem;
   margin-top: 0;
   color: #1a91fb;
+}
+
+@media only screen and (min-width: 511px) {
+  .card > .card__subHeadingDelice {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -293,6 +331,12 @@ li {
   font-size: 1.25rem;
 }
 
+@media only screen and (min-width: 511px) {
+  .card > .card__headingPalette {
+    font-size: 2.2rem;
+  }
+}
+
 @media only screen and (min-width: 760px) {
   .card > .card__headingPalette {
     font-size: 1.45rem;
@@ -301,7 +345,7 @@ li {
 
 @media only screen and (min-width: 900px) {
   .card > .card__headingPalette {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
 }
 
@@ -311,6 +355,30 @@ li {
   font-size: 1.7rem;
   margin-top: 0;
   color: #62b24e;
+}
+
+@media only screen and (min-width: 511px) {
+  .card > .card__subHeadingPalette {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .card > .card__subHeadingPalette {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .card > .card__subHeadingPalette {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 511px) {
+  .card {
+    font-size: 2.6rem;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -353,7 +421,7 @@ li {
   font-weight: 900;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 511px) {
   .header.header__heading {
     font-size: 3.7rem;
   }
@@ -371,7 +439,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 1300px) {
   .header.header__heading {
     padding: 1.8rem 0;
     font-size: 6rem;
@@ -401,7 +469,7 @@ li {
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 511px) {
   .footer {
     padding: 1rem;
     font-size: 1.3rem;
@@ -422,7 +490,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 1300px) {
   .footer {
     padding: 1.3rem;
     font-size: 1.6rem;
@@ -442,7 +510,7 @@ li {
   margin-top: 0.9rem;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 511px) {
   .btn {
     padding: 0.25em 1.5em;
     font-size: 1.9rem;
@@ -464,7 +532,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 1828px) {
+@media only screen and (min-width: 1300px) {
   .btn {
     padding: 0.5em 2.2em;
     font-size: 2.9rem;

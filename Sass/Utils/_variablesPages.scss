@@ -24,22 +24,6 @@ $palettes:(outlinePrimary:#579c87,
   textChicSection3:#6e4ccc);
 
 
-// breakpoints//
-// $breakpoints: (
-//   /* ********** Extra Small devices ******** */
-//   xs: (max-width: 360px),
-
-//   /* ********** Small devices ******** */
-//   sm:(min-width: 625px),
-
-//   /* ************* Medium devices ******** */
-//   md:(min-width: 768px),
-//   /* ********** Large devices ******** */
-//   lg:(min-width: 900px),
-
-//   /* ********** ExtraLarge devices ******** */
-//   xl: (min-width: 1828px));
-// breakpoints//
 $breakpoints: (
   /* ********** Extra Small devices ******** */
   xs: (max-width: 469px),
@@ -57,11 +41,6 @@ $breakpoints: (
   xl: (min-width: 900px));
 
 
-// $containerMaxWidths: (xs: auto,
-//   sm: 600px,
-//   md: 765px,
-//   lg: 880,
-//   xl: 1768px);
 $containerMaxWidths: (xs: 350px,
   xsSm: 360px,
   sm: 540px,
@@ -73,6 +52,5 @@ $containerMaxWidths: (xs: 350px,
 $fontSize:1rem;
 $boxShadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
 $cardheight:19rem;
-$cardwidth: 14rem;
-// $minwidth:35rem;
+$cardwidth: 20rem;
 $minwidth:20rem;

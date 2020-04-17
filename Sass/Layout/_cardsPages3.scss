@@ -72,10 +72,10 @@
     min-width: $minwidth;
   }
 
-  &>.card__headingPalette {
+  &>.card__headingDelice {
 
     text-align: center;
-    font-family: 'Kaushan Script';
+    font-family: 'Dancing Script';
     font-weight: 100;
     font-size: 2rem;
     box-shadow: none;
@@ -129,7 +129,7 @@
 
   @include media(xl) {}
 
-  &>.sect__subHeadingPalette {
+  &>.sect__subHeadingdelice {
     text-align: center;
     display: block;
     font-weight: 400;
@@ -243,7 +243,7 @@
 }
 
 
-.--backPalette {
-  background: map-get($palettes, backPalette);
+.--backDelice {
+  background: map-get($palettes, backDelice);
 
 }
