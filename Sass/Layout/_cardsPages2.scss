@@ -1,35 +1,4 @@
-// &>.card__headingChic {
-//   font-family: 'Croissant One';
-//   font-weight: 100;
-//   font-size: 0.9rem;
-//   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
 
-//   @include media(md) {
-//     font-size: 1.1rem;
-//   }
-
-//   @include media(lg) {
-//     font-size: 1.6rem;
-//   }
-
-// }
-
-// &>.card__subHeadingChic {
-//   font-family: 'Noto Serif';
-//   font-size: 1.6rem;
-//   margin-top: 0;
-//   color: #e38913;
-
-//   @include media(md) {
-//     font-size: 1.8rem;
-//   }
-
-//   @include media(lg) {
-//     font-size: 1.9rem;
-//   }
-// }
 .containerMain__heading {
   font-size: 1.2rem;
   text-align: center;
@@ -50,7 +19,8 @@
   flex: none;
   padding-top: 1rem;
   overflow: hidden;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
+  padding-top: 2.5rem;
 
   // margin-bottom: 6rem;
   box-shadow: $boxShadow;
@@ -75,25 +45,6 @@
     @include media(md) {
       font-size: 1.9rem;
     }
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 100%;
-    //   height: 2rem;
-    //   background: url("../../Public/Images/noteMusic.svg") center center /contain no-repeat;
-
-    //   @include media(md) {
-    //     height: 3rem;
-    //     width: 200%;
-    //   }
-
-    //   @include media(lg) {
-    //     height: 4rem;
-    //     width: 200%;
-    //   }
-    // }
-
 
   }
 
@@ -138,6 +89,14 @@
   &>.sect__subHeadingChicstart {
     text-align: center;
     display: block;
+
+    @include media(md) {}
+
+    @include media(lg) {
+      // font-size: 1.2rem;
+    }
+
+    @include media(xl) {}
 
     &::after {
       content: "";
@@ -201,6 +160,13 @@
     text-align: center;
     display: block;
 
+    @include media(md) {}
+
+    @include media(lg) {
+      // font-size: 1.2rem;
+    }
+
+    @include media(xl) {}
 
     &::after {
       content: "";
@@ -264,6 +230,13 @@
     text-align: center;
     display: block;
 
+    @include media(md) {}
+
+    @include media(lg) {
+      // font-size: 1.2rem;
+    }
+
+    @include media(xl) {}
 
     &::after {
       content: "";

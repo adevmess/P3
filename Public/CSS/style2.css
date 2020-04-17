@@ -114,7 +114,8 @@ li {
           flex: none;
   padding-top: 1rem;
   overflow: hidden;
-  padding-bottom: 2.5rem;
+  padding-bottom: 3.5rem;
+  padding-top: 2.5rem;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
   cursor: pointer;
