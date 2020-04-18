@@ -131,7 +131,7 @@ a {
   }
 }
 
-.card > .card__headingMention {
+.card > .card__heading {
   width: 100%;
   text-align: center;
   font-family: 'Kaushan Script';
@@ -147,19 +147,19 @@ a {
 }
 
 @media only screen and (min-width: 470px) {
-  .card > .card__headingMention {
+  .card > .card__heading {
     font-size: 2.1rem;
   }
 }
 
 @media only screen and (min-width: 545px) {
-  .card > .card__headingMention {
+  .card > .card__heading {
     font-size: 2.5rem;
   }
 }
 
 @media only screen and (min-width: 625px) {
-  .card > .card__headingMention {
+  .card > .card__heading {
     font-size: 2.6rem;
   }
 }
@@ -176,7 +176,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
@@ -196,72 +196,73 @@ a {
   }
 }
 
-.sect > .sect__subHeadingMention {
+.sect > .sect__subHeading {
   text-align: center;
   display: block;
   font-weight: 400;
+  font-size: 1rem;
 }
 
 @media only screen and (min-width: 625px) {
-  .sect > .sect__subHeadingMention {
+  .sect > .sect__subHeading {
     font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
-  .sect > .sect__subHeadingMention {
+  .sect > .sect__subHeading {
     font-size: 1.2rem;
   }
 }
 
-.sect > .sect__subHeadingMention::after {
+.sect > .sect__subHeading::after {
   content: "";
   display: block;
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/rightStraightPaletteDuGoutdegCitron.svg") center center/contain no-repeat;
-  -webkit-transform: translate(8rem, -1rem);
-          transform: translate(8rem, -1rem);
+  -webkit-transform: translate(11rem, -1rem);
+          transform: translate(11rem, -1rem);
 }
 
 @media only screen and (min-width: 470px) {
-  .sect > .sect__subHeadingMention::after {
+  .sect > .sect__subHeading::after {
     -webkit-transform: translate(14rem, -1rem);
             transform: translate(14rem, -1rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
-  .sect > .sect__subHeadingMention::after {
-    -webkit-transform: translate(20.5rem, -1rem);
-            transform: translate(20.5rem, -1rem);
+  .sect > .sect__subHeading::after {
+    -webkit-transform: translate(21.3rem, -1rem);
+            transform: translate(21.3rem, -1rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
-  .sect > .sect__subHeadingMention::after {
-    -webkit-transform: translate(23.7rem, -1rem);
-            transform: translate(23.7rem, -1rem);
+  .sect > .sect__subHeading::after {
+    -webkit-transform: translate(24.9rem, -1rem);
+            transform: translate(24.9rem, -1rem);
     height: 0.4rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
-  .sect > .sect__subHeadingMention::after {
-    -webkit-transform: translate(30.2rem, -1rem);
-            transform: translate(30.2rem, -1rem);
+  .sect > .sect__subHeading::after {
+    -webkit-transform: translate(31rem, -1rem);
+            transform: translate(31rem, -1rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .sect > .sect__subHeadingMention::after {
-    -webkit-transform: translate(34.7rem, -1rem);
-            transform: translate(34.7rem, -1rem);
+  .sect > .sect__subHeading::after {
+    -webkit-transform: translate(35.5rem, -1rem);
+            transform: translate(35.5rem, -1rem);
   }
 }
 
-.sect > .sect__subHeadingMention::before {
+.sect > .sect__subHeading::before {
   content: "";
   display: block;
   width: 30%;
@@ -272,14 +273,14 @@ a {
 }
 
 @media only screen and (min-width: 545px) {
-  .sect > .sect__subHeadingMention::before {
+  .sect > .sect__subHeading::before {
     -webkit-transform: translate(-1.3rem, 1rem);
             transform: translate(-1.3rem, 1rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
-  .sect > .sect__subHeadingMention::before {
+  .sect > .sect__subHeading::before {
     -webkit-transform: translate(-1.2rem, 1.3rem);
             transform: translate(-1.2rem, 1.3rem);
   }

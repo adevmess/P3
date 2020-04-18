@@ -6,7 +6,7 @@
         "../../Sass/Base/_reset.scss",
         "../../Sass/Base/_typography.scss",
         "../../Sass/Utils/_variables.scss",
-        "../../Sass/Utils/_mixins.scss",
+        "../../Sass/Utils/_mixinsAndAnimation.scss",
         "../../Sass/Utils/_functions.scss",
         "../../Sass/Layout/_containerMain.scss",
         "../../Sass/Layout/_cardsAcceuil.scss",
