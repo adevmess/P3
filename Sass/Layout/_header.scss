@@ -1,12 +1,14 @@
 .header {
   text-align: center;
 
+
   &.header__heading {
     margin: 0 auto;
     padding: 0.6rem 0;
     font-size: $fontSize*2.8;
     letter-spacing: -0.2rem;
     font-weight: 900;
+    // width: 100%;
 
 
     @include media(sm) {
@@ -33,6 +35,7 @@
 
 .--outlinePrimary {
   background: map-get($palettes, outlinePrimary);
+
 }
 
 

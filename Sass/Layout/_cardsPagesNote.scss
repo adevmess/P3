@@ -27,7 +27,8 @@
   }
 
   &>.card__headingNote {
-    // text-align: center;
+    width: 100%;
+    text-align: center;
     font-family: 'Devonshire';
     font-weight: 100;
     font-size: 1.3rem;
@@ -58,14 +59,6 @@
 
 
   }
-
-  @include media(sm) {}
-
-
-
-  @include media(lg) {}
-
-  @include media(xl) {}
 }
 
 .sect {
@@ -74,29 +67,24 @@
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
 
   @include media(sm) {
     padding: auto 1rem;
-    font-size: 0.9rem;
     font-family: 'Kalam';
     text-align: left;
     width: 95%;
   }
 
-  @include media(md) {}
 
-  @include media(lg) {}
-
-  @include media(xl) {}
 
   &>.sect__subHeadingNote {
     text-align: center;
     display: block;
-
+    font-size: 1.1rem;
 
 
 
@@ -111,28 +99,28 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/rightstraightNoteEnchante-\ 3.svg") center center /contain no-repeat;
-      transform: translate(8rem, -1rem);
+      transform: translate(11rem, -1.1rem);
 
       @include media(xsSm) {
-        transform: translate(14rem, -1rem);
+        transform: translate(14rem, -1.1rem);
       }
 
       @include media(sm) {
-        transform: translate(20.5rem, -1rem);
+        transform: translate(20.5rem, -1.1rem);
       }
 
       @include media(md) {
-        transform: translate(23.7rem, -1rem);
+        transform: translate(23.7rem, -1.1rem);
         height: 0.4rem;
       }
 
       @include media(lg) {
-        transform: translate(30.2rem, -1rem);
+        transform: translate(30.2rem, -1.1rem);
         height: 0.5rem;
       }
 
       @include media(xl) {
-        transform: translate(34.7rem, -1rem);
+        transform: translate(34.7rem, -1.1rem);
       }
     }
 
@@ -142,14 +130,14 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftstraightNoteEnchante.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
+      transform: translate(-1.9rem, 1.1rem);
 
       @include media(sm) {
-        transform: translate(-1.3rem, 1rem);
+        transform: translate(-1.3rem, 1.1rem);
       }
 
       @include media(md) {
-        transform: translate(-1.2rem, 1rem);
+        transform: translate(-1.2rem, 1.1rem);
       }
     }
   }

@@ -1,49 +1,3 @@
-// &>.card__headingPalette {
-//   font-family: 'Kaushan Script';
-//   font-weight: 100;
-//   background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   font-size: 1.25rem;
-
-//   @include media(md) {
-//     font-size: 1.45rem;
-//   }
-
-//   @include media(lg) {
-//     font-size: 1.9rem;
-//   }
-
-
-// }
-
-// &>.card__subHeadingPalette {
-//   font-family: 'Kalam', cursive;
-//   font-weight: 100;
-//   font-size: 1.7rem;
-//   margin-top: 0;
-//   color: #62b24e;
-// }
-
-// @include media(md) {
-//   font-size: 1.9rem;
-// }
-
-// @include media(lg) {
-//   font-size: 2rem;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
 .containerMain__heading {
   font-size: 1.2rem;
   text-align: center;
@@ -72,16 +26,16 @@
     min-width: $minwidth;
   }
 
-  &>.card__headingDelice {
-
+  &>.card__headingMention {
+    width: 100%;
     text-align: center;
-    font-family: 'Dancing Script';
+    font-family: 'Kaushan Script';
     font-weight: 100;
     font-size: 2rem;
     box-shadow: none;
     padding-right: 0.5rem;
     font-family: 'Kaushan Script';
-    background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+    background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -129,7 +83,7 @@
 
   @include media(xl) {}
 
-  &>.sect__subHeadingdelice {
+  &>.sect__subHeadingMention {
     text-align: center;
     display: block;
     font-weight: 400;
@@ -158,7 +112,7 @@
       display: block;
       width: 30%;
       height: 0.5rem;
-      background: url("../../Public/Images/rightStraightPaletteDuGout.svg") center center /contain no-repeat;
+      background: url("../../Public/Images/rightStraightPaletteDuGoutdegCitron.svg") center center /contain no-repeat;
 
       transform: translate(8rem, -1rem);
 
@@ -191,7 +145,7 @@
       display: block;
       width: 30%;
       height: 0.5rem;
-      background: url("../../Public/Images/leftStraightPaletteDuGout.svg") center center /contain no-repeat;
+      background: url("../../Public/Images/leftStraightPaletteDuGoutDegradécitron.svg") center center /contain no-repeat;
       transform: translate(-1.9rem, 1rem);
 
 
@@ -243,7 +197,7 @@
 }
 
 
-.--backDelice {
-  background: map-get($palettes, backDelice);
+.--backPalette {
+  background: map-get($palettes, backPalette);
 
 }

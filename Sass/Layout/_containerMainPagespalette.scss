@@ -18,8 +18,6 @@
   }
 
   @include media(sm) {
-    // width: $cardwidth;
-    // min-width: 16rem;
     padding: 1.3rem 0;
     max-width: map-get($containerMaxWidths, sm);
   }
@@ -27,7 +25,6 @@
   @include media(md) {
     padding: 1.3rem 0;
     max-width: map-get($containerMaxWidths, md);
-
   }
 
   @include media(lg) {
@@ -38,10 +35,5 @@
   @include media(xl) {
     padding: 1.3rem 0;
     max-width: map-get($containerMaxWidths, xl);
-    // display: flex;
-    // flex-flow: row wrap;
-    // justify-content: center;
-    // align-content: center;
-    // // flex: none;
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -32,12 +33,17 @@ li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .containerMain {
   margin: 0 auto;
   background: white;
   max-width: auto;
   padding: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 
 @media only screen and (max-width: 469px) {
@@ -113,6 +119,7 @@ li {
           flex: none;
   padding-top: 1rem;
   overflow: hidden;
+  margin-bottom: 3rem;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
   cursor: pointer;
@@ -124,40 +131,36 @@ li {
   }
 }
 
-.card > .card__headingNote {
-  font-family: 'Devonshire';
+.card > .card__headingMention {
+  width: 100%;
+  text-align: center;
+  font-family: 'Kaushan Script';
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 2rem;
   -webkit-box-shadow: none;
           box-shadow: none;
   padding-right: 0.5rem;
+  font-family: 'Kaushan Script';
+  background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-@media only screen and (min-width: 625px) {
-  .card > .card__headingNote {
-    font-size: 1.9rem;
+@media only screen and (min-width: 470px) {
+  .card > .card__headingMention {
+    font-size: 2.1rem;
   }
 }
 
-.card > .card__headingNote::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2rem;
-  background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
-}
-
-@media only screen and (min-width: 625px) {
-  .card > .card__headingNote::before {
-    height: 3rem;
-    width: 200%;
+@media only screen and (min-width: 545px) {
+  .card > .card__headingMention {
+    font-size: 2.5rem;
   }
 }
 
-@media only screen and (min-width: 780px) {
-  .card > .card__headingNote::before {
-    height: 4rem;
-    width: 200%;
+@media only screen and (min-width: 625px) {
+  .card > .card__headingMention {
+    font-size: 2.6rem;
   }
 }
 
@@ -179,6 +182,10 @@ li {
   width: 95%;
 }
 
+.sect.--dessert {
+  padding-bottom: 6rem;
+}
+
 @media only screen and (min-width: 545px) {
   .sect {
     padding: auto 1rem;
@@ -189,37 +196,50 @@ li {
   }
 }
 
-.sect > .sect__subHeadingNote {
+.sect > .sect__subHeadingMention {
   text-align: center;
   display: block;
+  font-weight: 400;
 }
 
-.sect > .sect__subHeadingNote::after {
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingMention {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingMention {
+    font-size: 1.2rem;
+  }
+}
+
+.sect > .sect__subHeadingMention::after {
   content: "";
   display: block;
   width: 30%;
   height: 0.5rem;
-  background: url("../../Public/Images/rightstraightNoteEnchante- 3.svg") center center/contain no-repeat;
+  background: url("../../Public/Images/rightStraightPaletteDuGoutdegCitron.svg") center center/contain no-repeat;
   -webkit-transform: translate(8rem, -1rem);
           transform: translate(8rem, -1rem);
 }
 
 @media only screen and (min-width: 470px) {
-  .sect > .sect__subHeadingNote::after {
+  .sect > .sect__subHeadingMention::after {
     -webkit-transform: translate(14rem, -1rem);
             transform: translate(14rem, -1rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
-  .sect > .sect__subHeadingNote::after {
+  .sect > .sect__subHeadingMention::after {
     -webkit-transform: translate(20.5rem, -1rem);
             transform: translate(20.5rem, -1rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
-  .sect > .sect__subHeadingNote::after {
+  .sect > .sect__subHeadingMention::after {
     -webkit-transform: translate(23.7rem, -1rem);
             transform: translate(23.7rem, -1rem);
     height: 0.4rem;
@@ -227,7 +247,7 @@ li {
 }
 
 @media only screen and (min-width: 780px) {
-  .sect > .sect__subHeadingNote::after {
+  .sect > .sect__subHeadingMention::after {
     -webkit-transform: translate(30.2rem, -1rem);
             transform: translate(30.2rem, -1rem);
     height: 0.5rem;
@@ -235,33 +255,33 @@ li {
 }
 
 @media only screen and (min-width: 900px) {
-  .sect > .sect__subHeadingNote::after {
+  .sect > .sect__subHeadingMention::after {
     -webkit-transform: translate(34.7rem, -1rem);
             transform: translate(34.7rem, -1rem);
   }
 }
 
-.sect > .sect__subHeadingNote::before {
+.sect > .sect__subHeadingMention::before {
   content: "";
   display: block;
   width: 30%;
   height: 0.5rem;
-  background: url("../../Public/Images/leftstraightNoteEnchante.svg") center center/contain no-repeat;
+  background: url("../../Public/Images/leftStraightPaletteDuGoutDegradécitron.svg") center center/contain no-repeat;
   -webkit-transform: translate(-1.9rem, 1rem);
           transform: translate(-1.9rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {
-  .sect > .sect__subHeadingNote::before {
+  .sect > .sect__subHeadingMention::before {
     -webkit-transform: translate(-1.3rem, 1rem);
             transform: translate(-1.3rem, 1rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
-  .sect > .sect__subHeadingNote::before {
-    -webkit-transform: translate(-1.2rem, 1rem);
-            transform: translate(-1.2rem, 1rem);
+  .sect > .sect__subHeadingMention::before {
+    -webkit-transform: translate(-1.2rem, 1.3rem);
+            transform: translate(-1.2rem, 1.3rem);
   }
 }
 
@@ -306,39 +326,8 @@ li {
   }
 }
 
-.footerNote {
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-  font-family: 'Devonshire';
-  font-weight: 100;
-  font-size: 1.3rem;
-}
-
-@media only screen and (min-width: 625px) {
-  .footerNote {
-    font-size: 1.8rem;
-  }
-}
-
-.footerNote::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1.8rem;
-  background: url("../../Public/Images/noteMusic.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-4.9rem, 1.6rem);
-          transform: translate(-4.9rem, 1.6rem);
-}
-
-@media only screen and (min-width: 625px) {
-  .footerNote::before {
-    -webkit-transform: translate(-6.2rem, 1.9rem);
-            transform: translate(-6.2rem, 1.9rem);
-  }
-}
-
-.--backNote {
-  background: #fcdfdb;
+.--backPalette {
+  background: #fdfffd;
 }
 
 .header {
@@ -428,4 +417,4 @@ li {
     font-size: 1.6rem;
   }
 }
-/*# sourceMappingURL=style1.css.map */
+/*# sourceMappingURL=styleMentionsLegales.css.map */

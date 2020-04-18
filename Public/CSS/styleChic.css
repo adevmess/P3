@@ -32,6 +32,11 @@ li {
   list-style: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .containerMain {
   margin: 0 auto;
   background: white;
@@ -128,6 +133,7 @@ li {
 }
 
 .card > .card__headingChic {
+  width: 100%;
   text-align: center;
   font-family: 'Croissant One';
   font-weight: 100;
@@ -159,25 +165,25 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   text-align: center;
   width: 95%;
-  font-family: 'Noto Serif';
+  font-family: 'Noto Serif JP';
 }
 
 @media only screen and (min-width: 545px) {
   .sect {
     padding: auto 1rem;
-    font-size: 0.9rem;
-    font-family: 'Noto Serif';
     text-align: left;
     width: 95%;
   }
 }
 
 .sect > .sect__subHeadingChicstart {
+  width: 100%;
   text-align: center;
   display: block;
+  font-size: 0.9rem;
 }
 
 .sect > .sect__subHeadingChicstart::after {
@@ -186,8 +192,8 @@ li {
   width: 30%;
   height: 0.2rem;
   background: url("../../Public/Images/RightStraightChicFrancestart.svg") center center/contain no-repeat;
-  -webkit-transform: translate(9rem, -1.8rem);
-          transform: translate(9rem, -1.8rem);
+  -webkit-transform: translate(12.5rem, -0.6rem);
+          transform: translate(12.5rem, -0.6rem);
 }
 
 @media only screen and (min-width: 470px) {
@@ -200,31 +206,31 @@ li {
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeadingChicstart::after {
-    -webkit-transform: translate(20.5rem, -1rem);
-            transform: translate(20.5rem, -1rem);
+    -webkit-transform: translate(20.5rem, -0.8rem);
+            transform: translate(20.5rem, -0.8rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingChicstart::after {
-    -webkit-transform: translate(23.5rem, -1rem);
-            transform: translate(23.5rem, -1rem);
+    -webkit-transform: translate(23.5rem, -0.8rem);
+            transform: translate(23.5rem, -0.8rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingChicstart::after {
-    -webkit-transform: translate(30.7rem, -1rem);
-            transform: translate(30.7rem, -1rem);
+    -webkit-transform: translate(30.7rem, -0.8rem);
+            transform: translate(30.7rem, -0.8rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingChicstart::after {
-    -webkit-transform: translate(36.7rem, -1rem);
-            transform: translate(36.7rem, -1rem);
+    -webkit-transform: translate(36.7rem, -0.8rem);
+            transform: translate(36.7rem, -0.8rem);
   }
 }
 
@@ -234,14 +240,14 @@ li {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftStraightChicFrancestart.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-2.6rem, 1rem);
-          transform: translate(-2.6rem, 1rem);
+  -webkit-transform: translate(-3.2rem, 1rem);
+          transform: translate(-3.2rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeadingChicstart::before {
-    -webkit-transform: translate(-1.3rem, 1rem);
-            transform: translate(-1.3rem, 1rem);
+    -webkit-transform: translate(-1.3rem, 0.8rem);
+            transform: translate(-1.3rem, 0.8rem);
   }
 }
 
@@ -267,8 +273,10 @@ li {
 }
 
 .sect > .sect__subHeadingChicdessert {
+  width: 100%;
   text-align: center;
   display: block;
+  font-size: 0.9rem;
 }
 
 .sect > .sect__subHeadingChicdessert::after {
@@ -277,8 +285,8 @@ li {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/RightStraightChicFrancedessert.svg") center center/contain no-repeat;
-  -webkit-transform: translate(9rem, -2rem);
-          transform: translate(9rem, -2rem);
+  -webkit-transform: translate(12.4rem, -0.8rem);
+          transform: translate(12.4rem, -0.8rem);
 }
 
 @media only screen and (min-width: 470px) {
@@ -313,8 +321,8 @@ li {
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingChicdessert::after {
-    -webkit-transform: translate(36.7rem, -0.9rem);
-            transform: translate(36.7rem, -0.9rem);
+    -webkit-transform: translate(36.7rem, -0.8rem);
+            transform: translate(36.7rem, -0.8rem);
   }
 }
 
@@ -324,8 +332,8 @@ li {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftStraightChicFrancedessert.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-2.4rem, 1rem);
-          transform: translate(-2.4rem, 1rem);
+  -webkit-transform: translate(-3.4rem, 1rem);
+          transform: translate(-3.4rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {
@@ -337,28 +345,30 @@ li {
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingChicdessert::before {
-    -webkit-transform: translate(-1.2rem, 0.9rem);
-            transform: translate(-1.2rem, 0.9rem);
+    -webkit-transform: translate(-1.2rem, 1rem);
+            transform: translate(-1.2rem, 1rem);
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingChicdessert::before {
-    -webkit-transform: translate(-2.2rem, 0.9rem);
-            transform: translate(-2.2rem, 0.9rem);
+    -webkit-transform: translate(-2.2rem, 1rem);
+            transform: translate(-2.2rem, 1rem);
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingChicdessert::before {
-    -webkit-transform: translate(-3.2rem, 0.9rem);
-            transform: translate(-3.2rem, 0.9rem);
+    -webkit-transform: translate(-3.2rem, 1rem);
+            transform: translate(-3.2rem, 1rem);
   }
 }
 
 .sect > .sect__subHeadingChicdish {
+  width: 100%;
   text-align: center;
   display: block;
+  font-size: 0.9rem;
 }
 
 .sect > .sect__subHeadingChicdish::after {
@@ -367,8 +377,8 @@ li {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/RightStraightChicFrancedish.svg") center center/contain no-repeat;
-  -webkit-transform: translate(9rem, -0.8rem);
-          transform: translate(9rem, -0.8rem);
+  -webkit-transform: translate(12.3rem, -0.8rem);
+          transform: translate(12.3rem, -0.8rem);
 }
 
 @media only screen and (min-width: 470px) {
@@ -395,16 +405,16 @@ li {
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingChicdish::after {
-    -webkit-transform: translate(31.2rem, -1rem);
-            transform: translate(31.2rem, -1rem);
+    -webkit-transform: translate(31.2rem, -0.8rem);
+            transform: translate(31.2rem, -0.8rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingChicdish::after {
-    -webkit-transform: translate(36.7rem, -1rem);
-            transform: translate(36.7rem, -1rem);
+    -webkit-transform: translate(36.7rem, -0.8rem);
+            transform: translate(36.7rem, -0.8rem);
   }
 }
 
@@ -590,4 +600,4 @@ li {
     font-size: 1.6rem;
   }
 }
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=styleChic.css.map */
