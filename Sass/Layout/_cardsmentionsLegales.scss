@@ -193,3 +193,8 @@
   background: map-get($palettes, backPalette);
 
 }
+
+
+span {
+  @include underline;
+}

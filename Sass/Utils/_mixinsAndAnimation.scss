@@ -12,3 +12,36 @@
     }
   }
 }
+
+//####### Animations###### //
+
+//  1 Underline //
+@mixin underline {
+
+  background: linear-gradient(currentColor, currentColor) no-repeat bottom left;
+  background-size: 0px 1px;
+  padding-bottom: 0.25rem;
+
+  &:hover {
+    background-size: 100% 2px;
+    transform-origin: left bottom;
+    transition: background-size 250ms ease-in-out;
+  }
+
+}
+
+@mixin wiggle {
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0.4deg);
+    }
+
+
+    100% {
+      transform: rotate(-0.4deg);
+    }
+  }
+
+  transform-origin: center;
+  animation: wiggle .3s infinite;
+}

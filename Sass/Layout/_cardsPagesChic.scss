@@ -51,21 +51,19 @@
 
 
 .sect {
-  // margin-top: 1.8rem;
+
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
-  // font-family: 'Kalam';
+  font-size: 0.65rem;
   text-align: center;
   width: 95%;
   font-family: 'Noto Serif JP';
-  // font-weight: 600;
 
   @include media(sm) {
+
     padding: auto 1rem;
-    // font-family: 'Noto Serif';
     text-align: left;
     width: 95%;
   }
@@ -336,4 +334,8 @@
 
 .--dessert {
   color: map-get($palettes, textChicSection3);
+}
+
+h3>.underline {
+  @include underline;
 }

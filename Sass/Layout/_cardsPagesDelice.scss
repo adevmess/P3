@@ -343,3 +343,7 @@
   background: map-get($palettes, backDelice);
 
 }
+
+h3>.underline {
+  @include underline;
+}
