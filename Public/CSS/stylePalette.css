@@ -7,6 +7,7 @@
 
 html,
 body {
+  -webkit-text-size-adjust: 100%;
   height: 100%;
   width: 100%;
   font-size: 16;
@@ -230,8 +231,8 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/rightStraightPaletteDuGout.svg") center center/contain no-repeat;
-  -webkit-transform: translate(11rem, -1rem);
-          transform: translate(11rem, -1rem);
+  -webkit-transform: translate(11.5rem, -1rem);
+          transform: translate(11.5rem, -1rem);
 }
 
 @media only screen and (min-width: 470px) {
@@ -277,8 +278,8 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftStraightPaletteDuGout.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-1.9rem, 1.1rem);
-          transform: translate(-1.9rem, 1.1rem);
+  -webkit-transform: translate(-2.2rem, 1.2rem);
+          transform: translate(-2.2rem, 1.2rem);
 }
 
 @media only screen and (min-width: 545px) {
