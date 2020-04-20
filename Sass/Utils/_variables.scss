@@ -43,7 +43,7 @@ $breakpoints: (
   /* ********** ExtraLarge devices ******** */
   xl: (min-width: 1300px));
 
-$containerMaxWidths: (xs: auto,
+$containerMaxWidths: (xs: 500px,
   sm: 600px,
   md: 730px,
   lg: 900px,

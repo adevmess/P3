@@ -52,6 +52,28 @@
 .card {
   overflow: hidden;
 
+  &.--backNote {
+
+    background: map-get($palettes, backNote);
+
+
+  }
+
+  &.--backChic {
+    background: map-get($palettes, backChic);
+  }
+
+  &.--backDelice {
+    background: map-get($palettes, backDelice);
+
+  }
+
+  &.--backPalette {
+    background: map-get($palettes, backPalette);
+
+  }
+
+
   &>.card__headingNote {
 
     font-family: 'Devonshire';
@@ -241,26 +263,6 @@
 }
 
 
-.--backNote {
-
-  background: map-get($palettes, backNote);
-
-
-}
-
-.--backChic {
-  background: map-get($palettes, backChic);
-}
-
-.--backDelice {
-  background: map-get($palettes, backDelice);
-
-}
-
-.--backPalette {
-  background: map-get($palettes, backPalette);
-
-}
 
 .card {
   transition: 0.8s;
@@ -270,15 +272,17 @@
   transition-duration: 0.4s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+
+  &.--zoom:hover {
+
+    transform: scale(1.3);
+    opacity: (.4);
+
+
+  }
 }
 
-.--zoom:hover {
 
-  transform: scale(1.3);
-  opacity: (.4);
-
-
-}
 
 // //###### ken burns effect img######//
 

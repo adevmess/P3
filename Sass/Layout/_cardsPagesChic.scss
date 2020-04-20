@@ -63,7 +63,8 @@
   font-family: 'Noto Serif JP';
 
   @include media(sm) {
-    padding: auto 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: left;
     width: 95%;
   }

@@ -10,7 +10,7 @@ body {
   -webkit-text-size-adjust: 100%;
   height: 100%;
   width: 100%;
-  font-size: 16;
+  font-size: 16px;
   font-family: 'Open Sans', "sans-serif";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,7 +42,6 @@ a {
 .containerMain {
   margin: 0 auto;
   background: white;
-  max-width: auto;
   padding: 1rem;
   margin-bottom: 6rem;
 }
@@ -182,7 +181,8 @@ a {
 
 @media only screen and (min-width: 545px) {
   .sect {
-    padding: auto 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-align: left;
     width: 95%;
   }

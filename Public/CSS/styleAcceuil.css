@@ -10,7 +10,7 @@ body {
   -webkit-text-size-adjust: 100%;
   height: 100%;
   width: 100%;
-  font-size: 16;
+  font-size: 16px;
   font-family: 'Open Sans', "sans-serif";
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -42,13 +42,12 @@ a {
 .containerMain {
   margin: 0 auto;
   background: white;
-  max-width: auto;
   padding: 1rem;
 }
 
 @media only screen and (max-width: 510px) {
   .containerMain {
-    max-width: auto;
+    max-width: 500px;
   }
 }
 
@@ -169,6 +168,22 @@ a {
 
 .card {
   overflow: hidden;
+}
+
+.card.--backNote {
+  background: #fcdfdb;
+}
+
+.card.--backChic {
+  background: #fff5fe;
+}
+
+.card.--backDelice {
+  background: #f9f9f9;
+}
+
+.card.--backPalette {
+  background: #fdfffd;
 }
 
 .card > .card__headingNote {
@@ -409,22 +424,6 @@ a {
   }
 }
 
-.--backNote {
-  background: #fcdfdb;
-}
-
-.--backChic {
-  background: #fff5fe;
-}
-
-.--backDelice {
-  background: #f9f9f9;
-}
-
-.--backPalette {
-  background: #fdfffd;
-}
-
 .card {
   -webkit-transition: 0.8s;
   transition: 0.8s;
@@ -440,7 +439,7 @@ a {
           transition-delay: 0s;
 }
 
-.--zoom:hover {
+.card.--zoom:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   opacity: 0.4;
@@ -677,6 +676,22 @@ footer > div > a {
           animation: ball 260ms 10s ease-in-out alternate infinite;
 }
 
+.btn > .containerball > .containerball__ball.--cl1 {
+  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+}
+
+.btn > .containerball > .containerball__ball.--cl2 {
+  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+}
+
+.btn > .containerball > .containerball__ball.--cl3 {
+  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+}
+
+.btn > .containerball > .containerball__ball.--cl4 {
+  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+}
+
 @media only screen and (min-width: 511px) {
   .btn > .containerball > .containerball__ball {
     width: 0.6rem;
@@ -738,21 +753,5 @@ footer > div > a {
     -webkit-transform: translateY(-1rem);
             transform: translateY(-1rem);
   }
-}
-
-.--cl1 {
-  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
-}
-
-.--cl2 {
-  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-}
-
-.--cl3 {
-  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-}
-
-.--cl4 {
-  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
 }
 /*# sourceMappingURL=styleAcceuil.css.map */

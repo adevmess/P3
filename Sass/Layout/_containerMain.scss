@@ -1,9 +1,8 @@
 .containerMain {
   margin: 0 auto;
   background: rgb(255, 255, 255);
-  max-width: auto;
   padding: 1rem;
-  
+
 
   @include media(xs) {
     max-width: map-get($containerMaxWidths, xs);

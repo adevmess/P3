@@ -67,7 +67,8 @@
 
 
   @include media(sm) {
-    padding: auto 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 0.8rem;
     font-family: 'Kalam';
     text-align: left;

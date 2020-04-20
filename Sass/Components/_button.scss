@@ -82,8 +82,27 @@
       height: $size;
       padding-left: 0.5rem;
       border-radius: 50%;
-
       animation: ball $animDur 10s ease-in-out alternate infinite;
+
+      &.--cl1 {
+        background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+
+      }
+
+      &.--cl2 {
+        background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+
+      }
+
+      &.--cl3 {
+        background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+
+      }
+
+      &.--cl4 {
+        background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+
+      }
 
       @include media(sm) {
         width: $size;
@@ -118,24 +137,4 @@
   100% {
     transform: translateY(-1rem);
   }
-}
-
-.--cl1 {
-  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
-
-}
-
-.--cl2 {
-  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-
-}
-
-.--cl3 {
-  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-
-}
-
-.--cl4 {
-  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-
 }

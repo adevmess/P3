@@ -18,6 +18,10 @@
   box-shadow: $boxShadow;
   cursor: pointer;
 
+  &.--backNote {
+    background: map-get($palettes, backNote);
+  }
+
   @include media(sm) {
     min-width: $minwidth;
   }
@@ -71,7 +75,8 @@
 
   @include media(sm) {
     font-size: 0.9rem;
-    padding: auto 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Kalam';
     text-align: left;
   }
@@ -207,9 +212,7 @@
   }
 }
 
-.--backNote {
-  background: map-get($palettes, backNote);
-}
+
 
 
 h3>.underline {
