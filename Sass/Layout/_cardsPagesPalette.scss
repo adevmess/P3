@@ -34,6 +34,7 @@
     font-family: 'Kaushan Script';
     background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
@@ -51,15 +52,19 @@
 }
 
 .sect {
-
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
+
+  @include media(xsSm) {
+    font-size: 0.9rem;
+  }
+
 
   @include media(sm) {
     padding: auto 1rem;
@@ -69,24 +74,25 @@
     width: 95%;
   }
 
+  @include media(md) {
+    font-size: 1rem;
+  }
 
   &>.sect__subHeadingPalette {
     text-align: center;
     display: block;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
 
 
-    @include media(md) {
-      font-size: 1.2rem;
-    }
+
 
     @include media(md) {
       font-size: 1.2rem;
     }
 
     @include media(lg) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     &::after {
@@ -127,12 +133,10 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftStraightPaletteDuGout.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
-
-
+      transform: translate(-1.9rem, 1.1rem);
 
       @include media(sm) {
-        transform: translate(-1.3rem, 1rem);
+        transform: translate(-1.3rem, 1.1rem);
       }
 
       @include media(md) {
@@ -181,7 +185,6 @@
   }
 
 }
-
 
 .--backPalette {
   background: map-get($palettes, backPalette);

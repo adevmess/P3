@@ -144,8 +144,15 @@ a {
   padding-right: 0.5rem;
   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
   background-clip: text;
+  -webkit-background-clip: text;
   padding-bottom: 1rem;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 545px) {
+  .card > .card__headingChic {
+    font-size: 1.7rem;
+  }
 }
 
 @media only screen and (min-width: 625px) {
@@ -166,7 +173,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   text-align: center;
   width: 95%;
   font-family: 'Noto Serif JP';
@@ -180,11 +187,29 @@ a {
   }
 }
 
+@media only screen and (min-width: 780px) {
+  .sect {
+    font-size: 1.1rem;
+  }
+}
+
 .sect > .sect__subHeadingChicstart {
   width: 100%;
   text-align: center;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicstart {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicstart {
+    font-size: 1.5rem;
+  }
 }
 
 .sect > .sect__subHeadingChicstart::after {
@@ -277,7 +302,19 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  font-size: 0.9rem;
+  font-size: 01.1rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdessert {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdessert {
+    font-size: 1.5rem;
+  }
 }
 
 .sect > .sect__subHeadingChicdessert::after {
@@ -369,7 +406,19 @@ a {
   width: 100%;
   text-align: center;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 545px) {
+  .sect > .sect__subHeadingChicdish {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeadingChicdish {
+    font-size: 1.5rem;
+  }
 }
 
 .sect > .sect__subHeadingChicdish::after {

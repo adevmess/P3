@@ -104,6 +104,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .containerMain > .cards > .card {
@@ -127,6 +128,7 @@ a {
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
   cursor: pointer;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 511px) {
@@ -162,6 +164,10 @@ a {
     margin: 1rem 2.5rem;
     text-align: center;
   }
+}
+
+.card {
+  overflow: hidden;
 }
 
 .card > .card__headingNote {
@@ -228,6 +234,7 @@ a {
   font-size: 0.9rem;
   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -279,6 +286,7 @@ a {
   font-weight: 100;
   background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-left: 0.5rem;
   font-size: 1.3rem;
@@ -333,6 +341,7 @@ a {
   font-weight: 100;
   background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.25rem;
 }
@@ -413,6 +422,27 @@ a {
 
 .--backPalette {
   background: #fdfffd;
+}
+
+.card {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.--zoom:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0.4;
 }
 
 .header {
@@ -533,20 +563,30 @@ footer > div > a {
 }
 
 .btn {
-  display: block;
-  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  max-width: 70%;
+  font-size: 1.1rem;
   cursor: pointer;
   border-radius: 0.6rem;
   border: none;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
   margin-top: 0.9rem;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 511px) {
   .btn {
+    font-size: 1.1rem;
+    width: 65%;
     padding: 0.25em 1.5em;
     font-size: 1.9rem;
     margin-bottom: 5rem;
@@ -555,6 +595,7 @@ footer > div > a {
 
 @media only screen and (min-width: 760px) {
   .btn {
+    width: 70%;
     padding: 0.3em 1.8em;
     font-size: 2.5rem;
   }
@@ -562,6 +603,7 @@ footer > div > a {
 
 @media only screen and (min-width: 900px) {
   .btn {
+    width: 60%;
     padding: 0.4em 2em;
     font-size: 2.6rem;
   }
@@ -569,10 +611,147 @@ footer > div > a {
 
 @media only screen and (min-width: 1300px) {
   .btn {
-    padding: 0.5em 2.2em;
-    font-size: 2.9rem;
-    margin-top: 3rem;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
+    padding-left: 13rem;
   }
+}
+
+.btn > .containerball {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 10%;
+  padding-bottom: .3rem;
+  margin-right: 0.9rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 511px) {
+  .btn > .containerball {
+    width: 10%;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .btn > .containerball {
+    margin-left: 3rem;
+    width: 20%;
+    padding-right: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .btn > .containerball {
+    width: 25%;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .btn > .containerball {
+    margin-left: 3rem;
+  }
+}
+
+.btn > .containerball > .containerball__ball {
+  width: 0.6rem;
+  padding-left: 0.2rem;
+  height: 0.6rem;
+  padding-left: 0.5rem;
+  border-radius: 50%;
+  -webkit-animation: ball 260ms 10s ease-in-out alternate infinite;
+          animation: ball 260ms 10s ease-in-out alternate infinite;
+}
+
+@media only screen and (min-width: 511px) {
+  .btn > .containerball > .containerball__ball {
+    width: 0.6rem;
+    margin-left: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .btn > .containerball > .containerball__ball {
+    margin-left: 0.5rem;
+    width: 1.14rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .btn > .containerball > .containerball__ball {
+    margin-left: 0.5rem;
+    width: 1.14rem;
+  }
+}
+
+.btn > .containerball > .containerball__ball--b1 {
+  -webkit-animation-delay: 5.065s;
+          animation-delay: 5.065s;
+}
+
+.btn > .containerball > .containerball__ball--b2 {
+  -webkit-animation-delay: 5.13s;
+          animation-delay: 5.13s;
+}
+
+.btn > .containerball > .containerball__ball--b3 {
+  -webkit-animation-delay: 5.195s;
+          animation-delay: 5.195s;
+}
+
+.btn > .containerball > .containerball__ball--b4 {
+  -webkit-animation-delay: 5.26s;
+          animation-delay: 5.26s;
+}
+
+@-webkit-keyframes ball {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes ball {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+.--cl1 {
+  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+}
+
+.--cl2 {
+  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+}
+
+.--cl3 {
+  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+}
+
+.--cl4 {
+  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
 }
 /*# sourceMappingURL=styleAcceuil.css.map */

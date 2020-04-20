@@ -142,6 +142,7 @@ a {
   padding-right: 0.5rem;
   background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -175,7 +176,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
@@ -190,23 +191,35 @@ a {
   }
 }
 
+@media only screen and (min-width: 625px) {
+  .sect {
+    font-size: 1rem;
+  }
+}
+
 .sect > .sect__subHeadingDelicestart {
   width: 100%;
   text-align: center;
   display: block;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingDelicestart {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicestart {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicestart {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -216,44 +229,44 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/ridhtstraightDelicePap.svg") center center/contain no-repeat;
-  -webkit-transform: translate(11rem, -1rem);
-          transform: translate(11rem, -1rem);
+  -webkit-transform: translate(11.5rem, -1.1rem);
+          transform: translate(11.5rem, -1.1rem);
 }
 
 @media only screen and (min-width: 470px) {
   .sect > .sect__subHeadingDelicestart::after {
-    -webkit-transform: translate(14rem, -1rem);
-            transform: translate(14rem, -1rem);
+    -webkit-transform: translate(14rem, -1.2rem);
+            transform: translate(14rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeadingDelicestart::after {
-    -webkit-transform: translate(20.5rem, -1rem);
-            transform: translate(20.5rem, -1rem);
+    -webkit-transform: translate(20.5rem, -1.2rem);
+            transform: translate(20.5rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicestart::after {
-    -webkit-transform: translate(23.7rem, -1rem);
-            transform: translate(23.7rem, -1rem);
+    -webkit-transform: translate(23.7rem, -1.2rem);
+            transform: translate(23.7rem, -1.2rem);
     height: 0.4rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicestart::after {
-    -webkit-transform: translate(30.2rem, -1rem);
-            transform: translate(30.2rem, -1rem);
+    -webkit-transform: translate(30.2rem, -1.3rem);
+            transform: translate(30.2rem, -1.3rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingDelicestart::after {
-    -webkit-transform: translate(34.7rem, -1rem);
-            transform: translate(34.7rem, -1rem);
+    -webkit-transform: translate(34.7rem, -1.3rem);
+            transform: translate(34.7rem, -1.3rem);
   }
 }
 
@@ -263,8 +276,8 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftstraightDelicePap.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-1.9rem, 1rem);
-          transform: translate(-1.9rem, 1rem);
+  -webkit-transform: translate(-2.2rem, 1rem);
+          transform: translate(-2.2rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {
@@ -286,18 +299,24 @@ a {
   text-align: center;
   display: block;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingDelicedish {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicedish {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicedish {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -307,44 +326,44 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/ridhtstraightDelicePapDish.svg") center center/contain no-repeat;
-  -webkit-transform: translate(11rem, -1rem);
-          transform: translate(11rem, -1rem);
+  -webkit-transform: translate(11.5rem, -1.1rem);
+          transform: translate(11.5rem, -1.1rem);
 }
 
 @media only screen and (min-width: 470px) {
   .sect > .sect__subHeadingDelicedish::after {
-    -webkit-transform: translate(14rem, -1rem);
-            transform: translate(14rem, -1rem);
+    -webkit-transform: translate(14rem, -1.2rem);
+            transform: translate(14rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeadingDelicedish::after {
-    -webkit-transform: translate(20.5rem, -1rem);
-            transform: translate(20.5rem, -1rem);
+    -webkit-transform: translate(20.5rem, -1.2rem);
+            transform: translate(20.5rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicedish::after {
-    -webkit-transform: translate(23.7rem, -1rem);
-            transform: translate(23.7rem, -1rem);
+    -webkit-transform: translate(23.7rem, -1.2rem);
+            transform: translate(23.7rem, -1.2rem);
     height: 0.4rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicedish::after {
-    -webkit-transform: translate(30.2rem, -1rem);
-            transform: translate(30.2rem, -1rem);
+    -webkit-transform: translate(30.2rem, -1.3rem);
+            transform: translate(30.2rem, -1.3rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingDelicedish::after {
-    -webkit-transform: translate(34.7rem, -1rem);
-            transform: translate(34.7rem, -1rem);
+    -webkit-transform: translate(34.7rem, -1.3rem);
+            transform: translate(34.7rem, -1.3rem);
   }
 }
 
@@ -354,8 +373,8 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftstraightDelicePapDish.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-1.9rem, 1rem);
-          transform: translate(-1.9rem, 1rem);
+  -webkit-transform: translate(-2.2rem, 1rem);
+          transform: translate(-2.2rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {
@@ -377,18 +396,24 @@ a {
   text-align: center;
   display: block;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 470px) {
+  .sect > .sect__subHeadingDelicedessert {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicedessert {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicedessert {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -398,44 +423,44 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/ridhtstraightDelicePapDessert.svg") center center/contain no-repeat;
-  -webkit-transform: translate(11rem, -1rem);
-          transform: translate(11rem, -1rem);
+  -webkit-transform: translate(11.5rem, -1.1rem);
+          transform: translate(11.5rem, -1.1rem);
 }
 
 @media only screen and (min-width: 470px) {
   .sect > .sect__subHeadingDelicedessert::after {
-    -webkit-transform: translate(14rem, -1rem);
-            transform: translate(14rem, -1rem);
+    -webkit-transform: translate(14rem, -1.2rem);
+            transform: translate(14rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeadingDelicedessert::after {
-    -webkit-transform: translate(20.5rem, -1rem);
-            transform: translate(20.5rem, -1rem);
+    -webkit-transform: translate(20.5rem, -1.2rem);
+            transform: translate(20.5rem, -1.2rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeadingDelicedessert::after {
-    -webkit-transform: translate(23.7rem, -1rem);
-            transform: translate(23.7rem, -1rem);
+    -webkit-transform: translate(23.7rem, -1.2rem);
+            transform: translate(23.7rem, -1.2rem);
     height: 0.4rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeadingDelicedessert::after {
-    -webkit-transform: translate(30.2rem, -1rem);
-            transform: translate(30.2rem, -1rem);
+    -webkit-transform: translate(30.2rem, -1.3rem);
+            transform: translate(30.2rem, -1.3rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeadingDelicedessert::after {
-    -webkit-transform: translate(34.7rem, -1rem);
-            transform: translate(34.7rem, -1rem);
+    -webkit-transform: translate(34.7rem, -1.3rem);
+            transform: translate(34.7rem, -1.3rem);
   }
 }
 
@@ -445,8 +470,8 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftstraightDelicePapDessert.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-1.9rem, 1rem);
-          transform: translate(-1.9rem, 1rem);
+  -webkit-transform: translate(-2.2rem, 1rem);
+          transform: translate(-2.2rem, 1rem);
 }
 
 @media only screen and (min-width: 545px) {

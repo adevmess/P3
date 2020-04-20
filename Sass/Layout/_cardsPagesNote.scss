@@ -8,7 +8,6 @@
 
 }
 
-
 .card {
   display: flex;
   flex-flow: column;
@@ -64,32 +63,37 @@
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
 
+
   @include media(sm) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: auto 1rem;
     font-family: 'Kalam';
     text-align: left;
-    width: 95%;
   }
 
+  @include media(md) {
+    font-size: 1rem;
 
+  }
+
+  @include media(lg) {
+    font-size: 1.1rem;
+
+  }
 
   &>.sect__subHeadingNote {
     text-align: center;
     display: block;
     font-size: 1.1rem;
 
-
-
-
-    @include media(lg) {}
-
-    @include media(xl) {}
+    @include media(md) {
+      font-size: 1.2rem;
+    }
 
     &::after {
       content: "";
@@ -212,4 +216,3 @@ h3>.underline {
   @include underline;
 
 }
-

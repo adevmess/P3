@@ -37,6 +37,7 @@
     font-family: 'Kaushan Script';
     background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
@@ -64,37 +65,31 @@
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
 
   @include media(sm) {
     padding: auto 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: 'Kalam';
     text-align: left;
     width: 95%;
   }
 
-  @include media(md) {}
-
-  @include media(lg) {}
-
-  @include media(xl) {}
-
   &>.sect__subHeading {
     text-align: center;
     display: block;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.2rem;
 
     @include media(md) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     @include media(lg) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
 
@@ -106,28 +101,28 @@
       height: 0.5rem;
       background: url("../../Public/Images/rightStraightPaletteDuGoutdegCitron.svg") center center /contain no-repeat;
 
-      transform: translate(11rem, -1rem);
+      transform: translate(11rem, -1.1rem);
 
       @include media(xsSm) {
-        transform: translate(14rem, -1rem);
+        transform: translate(14rem, -1.1rem);
       }
 
       @include media(sm) {
-        transform: translate(21.3rem, -1rem);
+        transform: translate(21.3rem, -1.1rem);
       }
 
       @include media(md) {
-        transform: translate(24.9rem, -1rem);
+        transform: translate(24.9rem, -1.1rem);
         height: 0.4rem;
       }
 
       @include media(lg) {
-        transform: translate(31rem, -1rem);
+        transform: translate(31rem, -1.1rem);
         height: 0.5rem;
       }
 
       @include media(xl) {
-        transform: translate(35.5rem, -1rem);
+        transform: translate(35.5rem, -1.1rem);
       }
     }
 
@@ -138,16 +133,18 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftStraightPaletteDuGoutDegradécitron.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
-
-
+      transform: translate(-1.9rem, 1.3rem);
 
       @include media(sm) {
-        transform: translate(-1.3rem, 1rem);
+        transform: translate(-1.3rem, 1.3rem);
       }
 
       @include media(md) {
-        transform: translate(-1.2rem, 1.3rem);
+        transform: translate(-1.3rem, 1.3rem);
+      }
+
+      @include media(lg) {
+        transform: translate(-1.3rem, 1.5rem);
       }
     }
   }

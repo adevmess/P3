@@ -1,5 +1,4 @@
 .footer {
-
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem;
@@ -8,8 +7,6 @@
   left: 0;
   right: 0;
   font-size: $fontSize;
-
-
 
   @include media(sm) {
     padding: 1rem;

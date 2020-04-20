@@ -8,7 +8,6 @@
 
 }
 
-
 .card {
   font-family: 'Noto Serif';
   display: flex;
@@ -20,8 +19,6 @@
   overflow: hidden;
   padding-bottom: 3.5rem;
   padding-top: 2.5rem;
-
-  // margin-bottom: 6rem;
   box-shadow: $boxShadow;
   cursor: pointer;
 
@@ -39,33 +36,40 @@
     padding-right: 0.5rem;
     background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
     background-clip: text;
+    -webkit-background-clip: text;
     padding-bottom: 1rem;
     -webkit-text-fill-color: transparent;
+
+    @include media(sm) {
+      font-size: 1.7rem;
+      ;
+    }
 
     @include media(md) {
       font-size: 1.9rem;
     }
-
   }
 }
 
 
 .sect {
-
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   text-align: center;
   width: 95%;
   font-family: 'Noto Serif JP';
 
   @include media(sm) {
-
     padding: auto 1rem;
     text-align: left;
     width: 95%;
+  }
+
+  @include media(lg) {
+    font-size: 1.1rem;
   }
 
 
@@ -74,13 +78,16 @@
     width: 100%;
     text-align: center;
     display: block;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 
-    @include media(lg) {
-      // font-size: 1.1rem;
+    @include media(sm) {
+      font-size: 1.2rem;
+
     }
 
-    @include media(xl) {}
+    @include media(lg) {
+      font-size: 1.5rem;
+    }
 
     &::after {
       content: "";
@@ -144,13 +151,15 @@
     width: 100%;
     text-align: center;
     display: block;
-    font-size: 0.9rem;
+    font-size: 01.1rem;
 
-    @include media(md) {}
+    @include media(sm) {
+      font-size: 1.2rem;
+    }
 
-    @include media(lg) {}
-
-    @include media(xl) {}
+    @include media(lg) {
+      font-size: 1.5rem;
+    }
 
     &::after {
       content: "";
@@ -214,15 +223,15 @@
     width: 100%;
     text-align: center;
     display: block;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 
-    @include media(md) {}
-
-    @include media(lg) {
-      // font-size: 1.2rem;
+    @include media(sm) {
+      font-size: 1.2rem;
     }
 
-    @include media(xl) {}
+    @include media(lg) {
+      font-size: 1.5rem;
+    }
 
     &::after {
       content: "";
@@ -311,10 +320,7 @@
     @include media(lg) {
       content: attr(data-count);
       float: right;
-
     }
-
-    @include media(xl) {}
   }
 }
 

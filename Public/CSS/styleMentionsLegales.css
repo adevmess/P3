@@ -144,6 +144,7 @@ a {
   font-family: 'Kaushan Script';
   background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -177,7 +178,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
@@ -190,7 +191,7 @@ a {
 @media only screen and (min-width: 545px) {
   .sect {
     padding: auto 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: 'Kalam';
     text-align: left;
     width: 95%;
@@ -201,18 +202,18 @@ a {
   text-align: center;
   display: block;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeading {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeading {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -222,44 +223,44 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/rightStraightPaletteDuGoutdegCitron.svg") center center/contain no-repeat;
-  -webkit-transform: translate(11rem, -1rem);
-          transform: translate(11rem, -1rem);
+  -webkit-transform: translate(11rem, -1.1rem);
+          transform: translate(11rem, -1.1rem);
 }
 
 @media only screen and (min-width: 470px) {
   .sect > .sect__subHeading::after {
-    -webkit-transform: translate(14rem, -1rem);
-            transform: translate(14rem, -1rem);
+    -webkit-transform: translate(14rem, -1.1rem);
+            transform: translate(14rem, -1.1rem);
   }
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeading::after {
-    -webkit-transform: translate(21.3rem, -1rem);
-            transform: translate(21.3rem, -1rem);
+    -webkit-transform: translate(21.3rem, -1.1rem);
+            transform: translate(21.3rem, -1.1rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeading::after {
-    -webkit-transform: translate(24.9rem, -1rem);
-            transform: translate(24.9rem, -1rem);
+    -webkit-transform: translate(24.9rem, -1.1rem);
+            transform: translate(24.9rem, -1.1rem);
     height: 0.4rem;
   }
 }
 
 @media only screen and (min-width: 780px) {
   .sect > .sect__subHeading::after {
-    -webkit-transform: translate(31rem, -1rem);
-            transform: translate(31rem, -1rem);
+    -webkit-transform: translate(31rem, -1.1rem);
+            transform: translate(31rem, -1.1rem);
     height: 0.5rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sect > .sect__subHeading::after {
-    -webkit-transform: translate(35.5rem, -1rem);
-            transform: translate(35.5rem, -1rem);
+    -webkit-transform: translate(35.5rem, -1.1rem);
+            transform: translate(35.5rem, -1.1rem);
   }
 }
 
@@ -269,21 +270,28 @@ a {
   width: 30%;
   height: 0.5rem;
   background: url("../../Public/Images/leftStraightPaletteDuGoutDegradécitron.svg") center center/contain no-repeat;
-  -webkit-transform: translate(-1.9rem, 1rem);
-          transform: translate(-1.9rem, 1rem);
+  -webkit-transform: translate(-1.9rem, 1.3rem);
+          transform: translate(-1.9rem, 1.3rem);
 }
 
 @media only screen and (min-width: 545px) {
   .sect > .sect__subHeading::before {
-    -webkit-transform: translate(-1.3rem, 1rem);
-            transform: translate(-1.3rem, 1rem);
+    -webkit-transform: translate(-1.3rem, 1.3rem);
+            transform: translate(-1.3rem, 1.3rem);
   }
 }
 
 @media only screen and (min-width: 625px) {
   .sect > .sect__subHeading::before {
-    -webkit-transform: translate(-1.2rem, 1.3rem);
-            transform: translate(-1.2rem, 1.3rem);
+    -webkit-transform: translate(-1.3rem, 1.3rem);
+            transform: translate(-1.3rem, 1.3rem);
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect > .sect__subHeading::before {
+    -webkit-transform: translate(-1.3rem, 1.5rem);
+            transform: translate(-1.3rem, 1.5rem);
   }
 }
 

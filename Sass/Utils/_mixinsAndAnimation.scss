@@ -13,9 +13,13 @@
   }
 }
 
+
+
+
 //####### Animations###### //
 
 //  1 Underline //
+
 @mixin underline {
 
   background: linear-gradient(currentColor, currentColor) no-repeat bottom left;
@@ -35,7 +39,6 @@
     0% {
       transform: rotate(0.4deg);
     }
-
 
     100% {
       transform: rotate(-0.4deg);

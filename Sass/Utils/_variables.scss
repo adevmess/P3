@@ -1,4 +1,6 @@
 // ColorsMap// 
+
+
 $palettes:(outlinePrimary:#579c87,
   outlineTextPrimary:#fdcb46,
   backGrSite:#fff,
@@ -15,9 +17,9 @@ $palettes:(outlinePrimary:#579c87,
   subTitleDelice:#0887fb,
   subTitlePalette:#72bf56,
   // GradientMusicNote:(#f04e5f,905bfd)
-  // GradientTitleChic:(#e38913,#a366c5)
+  // GradientTitleChic:(#e38913, #905bfd)
   // GradientTitleDelice:(#0022db,#1a91fb)
-  // GradientTitlePalette:(#3d923a,#beff7f)
+  // GradientTitlePalette:(#3d923a,#bfff7e)
   textNote:#3c1318,
   textChicSection1:#c77412,
   textChicSection2:#a56799,
@@ -25,6 +27,7 @@ $palettes:(outlinePrimary:#579c87,
 
 
 // breakpoints//
+
 $breakpoints: (
   /* ********** Extra Small devices ******** */
   xs: (max-width: 510px),
@@ -40,7 +43,6 @@ $breakpoints: (
   /* ********** ExtraLarge devices ******** */
   xl: (min-width: 1300px));
 
-
 $containerMaxWidths: (xs: auto,
   sm: 600px,
   md: 730px,
@@ -48,8 +50,18 @@ $containerMaxWidths: (xs: auto,
   xl: 1450px);
 
 
+
+// cards variables
+
 $fontSize:1rem;
 $boxShadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
 $cardheight:22rem;
 $cardwidth: 14rem;
 $minwidth:12.5rem;
+
+
+
+// animation
+$animDur:260ms;
+$numBall:4;
+$size:0.6rem;

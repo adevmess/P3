@@ -1,37 +1,141 @@
 .btn {
-  display: block;
-  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  max-width: 70%;
+  font-size: 1.1rem;
   cursor: pointer;
   border-radius: 0.6rem;
   border: none;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
   margin-top: 0.9rem;
+  overflow: hidden;
 
   @include media(sm) {
+    font-size: 1.1rem;
+    width: 65%;
     padding: 0.25em 1.5em;
     font-size: $fontSize*1.9;
     margin-bottom: 5rem;
-
   }
 
   @include media(md) {
+    width: 70%;
     padding: 0.3em 1.8em;
     font-size: $fontSize*2.5;
   }
 
   @include media(lg) {
+    width: 60%;
     padding: 0.4em 2em;
     font-size: $fontSize*2.6;
-
   }
 
   @include media(xl) {
-    padding: 0.5em 2.2em;
-    font-size: $fontSize*2.9;
-    margin-top: 3rem;
+    width: 50%;
+    padding: 0.5rem 1rem;
+    padding-left: 1rem;
+    font-size: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 5rem;
+    padding-left: 13rem;
   }
+
+  &>.containerball {
+    display: flex;
+    align-items: flex-end;
+    justify-items: center;
+    justify-content: space-around;
+    width: 10%;
+    padding-bottom: .3rem;
+    margin-right: 0.9rem;
+    margin-left: 1rem;
+
+    @include media(sm) {
+      width: 10%;
+      margin-left: 2rem;
+
+    }
+
+    @include media(md) {
+      margin-left: 3rem;
+      width: 20%;
+      padding-right: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @include media(lg) {
+      width: 25%;
+      margin-left: 3rem;
+    }
+
+    @include media(xl) {
+      margin-left: 3rem;
+    }
+
+    &>.containerball__ball {
+      width: $size;
+      padding-left: 0.2rem;
+      height: $size;
+      padding-left: 0.5rem;
+      border-radius: 50%;
+
+      animation: ball $animDur 10s ease-in-out alternate infinite;
+
+      @include media(sm) {
+        width: $size;
+        margin-left: 0.4rem;
+      }
+
+      @include media(md) {
+        margin-left: 0.5rem;
+        width: $size*1.9;
+      }
+
+      @include media(lg) {
+        margin-left: 0.5rem;
+        width: $size*1.9;
+      }
+
+      @for $i from 1 through $numBall {
+        &--b#{$i} {
+          animation-delay: 5s+ ($animDur/$numBall)*$i;
+        }
+      }
+    }
+  }
+}
+
+@keyframes ball {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+.--cl1 {
+  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+
+}
+
+.--cl2 {
+  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+
+}
+
+.--cl3 {
+  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+
+}
+
+.--cl4 {
+  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+
 }

@@ -180,7 +180,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
@@ -188,11 +188,22 @@ a {
 
 @media only screen and (min-width: 545px) {
   .sect {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: auto 1rem;
     font-family: 'Kalam';
     text-align: left;
-    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .sect {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .sect {
+    font-size: 1.1rem;
   }
 }
 
@@ -200,6 +211,12 @@ a {
   text-align: center;
   display: block;
   font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 625px) {
+  .sect > .sect__subHeadingNote {
+    font-size: 1.2rem;
+  }
 }
 
 .sect > .sect__subHeadingNote::after {

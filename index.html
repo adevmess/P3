@@ -4,54 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0hmyfood</title>
+  <meta name="description" content="Réservation de restaurants et de composition de menus en ligne.">
+  <!-- Social Tags   -->
+  <meta property="og:title" content="Réservation de restaurants et de composition de menus en ligne.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ohMyFood@gmail.com/fr//">
+  <meta property="og:description" content="Réservation de restaurants et de composition de menus en ligne.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ohMyFood">
+  <meta name="twitter:title" content="Réservation de restaurants et de composition de menus en ligne.">
+  <meta name="twitter:description" content="Réservation de restaurants et de composition de menus en ligne.">
+
+  <!-- Fonts -->
   <link
     href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kalam:wght@300;400;700&family=Kaushan+Script&family=Noto+Serif:wght@700&family=Open+Sans:wght@600&display=swap"
     rel="stylesheet">
 
+  <!-- Custom styles -->
   <link rel="stylesheet" href="Public/CSS/styleAcceuil.css">
-  <title>Document</title>
+
 </head>
 
 <body>
-  <!-- <div class="GlobalContainer"> -->
+  <!-- Header -->
   <header class="header --outlinePrimary">
-    <h1 class="header header__heading --outlineTextPrimary"><a href="./index.html">ohmyfood</a></h1>
+    <h1 class="header header__heading --outlineTextPrimary">
+      <a href="./index.html">ohmyfood</a>
+    </h1>
   </header>
+
+  <!-- center -->
   <div class="containerMain">
-    <div class="cards">
 
+    <!-- Cards  -->
+    <div class="cards ">
 
-      <a href="./noteMenu.html" class="card --backNote">
-
-        <h2 class="card card__headingNote"> La note enchantée</h2>
-        <h3 class="card card__subHeadingNote">menu</h3>
-
+      <!-- cardNote  -->
+      <a href="./noteMenu.html" class="card --backNote ">
+        <h2 class="card card__headingNote --zoom"> La note enchantée</h2>
+        <h3 class="card card__subHeadingNote --zoom ">menu</h3>
+        <!-- <div id="zoom"><img src="Public/Images/menu-1b.png" alt="note"></div> -->
       </a>
 
+      <!-- cardChic  -->
       <a href="./chicMenu.html" class="card --backChic">
-        <h2 class="card card__headingChic">Le chic à la française</h2>
-        <h3 class="card card__subHeadingChic">Menu</h3>
+        <h2 class="card card__headingChic --zoom">Le chic à la française</h2>
+        <h3 class="card card__subHeadingChic --zoom">Menu</h3>
       </a>
+
+      <!-- cardDelice  -->
       <a href="./deliceMenu.html" class="card --backDelice">
-        <h2 class="card card__headingDelice">Le délice des papilles</h2>
-        <h3 class="card card__subHeadingDelice">Menu</h3>
+        <h2 class="card card__headingDelice --zoom">Le délice des papilles</h2>
+        <h3 class="card card__subHeadingDelice --zoom">Menu</h3>
       </a>
+
+      <!-- cardPalette  -->
       <a href="./paletteMenu.html" class="card --backPalette">
-        <h2 class="card card__headingPalette">La palette du goût</h2>
-        <h3 class="card card__subHeadingPalette">Menu</h3>
+        <h2 class="card card__headingPalette --zoom">La palette du goût</h2>
+        <h3 class="card card__subHeadingPalette --zoom">Menu</h3>
       </a>
-
     </div>
-    <!-- <div class="button "> -->
-    <button class="btn --outlinePrimary  --outlineTextPrimary">Prochainement</button>
-    <!-- </div> -->
 
+    <!--Button-->
+    <div class="btn --outlinePrimary  --outlineTextPrimary">Prochainement
+      <div class="containerball">
+        <div class="containerball__ball containerball__ball--b1 --cl1">
+        </div>
+        <div class="containerball__ball containerball__ball--b2 --cl2">
+        </div>
+        <div class="containerball__ball containerball__ball--b3 --cl3">
+        </div>
+        <div class="containerball__ball containerball__ball--b4 --cl4">
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- footer -->
   <footer class="footer --outlinePrimary">
-    <div class="footer__legalNotice --outlineTextPrimary"><a href="mentionsLegales.html"><span class="wiggle">Mentions Légales</span></a>
+    <div class="footer__legalNotice --outlineTextPrimary">
+      <a href="mentionsLegales.html">
+        <span class="wiggle">Mentions Légales</span>
+      </a>
     </div>
-    <div class="footer__contact --outlineTextPrimary"><a href="mailto:ohMyFood@gmail.com"><span class="wiggle">Contactez-nous</span></a></div>
+    <div class="footer__contact --outlineTextPrimary">
+      <a href="mailto:ohMyFood@gmail.com">
+        <span class="wiggle">Contactez-nous</span>
+      </a>
+    </div>
   </footer>
+
 </body>
 
 </html>

@@ -5,7 +5,6 @@
   @include media(md) {
     font-size: 1.8rem;
   }
-
 }
 
 
@@ -17,7 +16,6 @@
   flex: none;
   padding-top: 1rem;
   overflow: hidden;
-
   margin-bottom: 3rem;
   box-shadow: $boxShadow;
   cursor: pointer;
@@ -36,6 +34,7 @@
     padding-right: 0.5rem;
     background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
@@ -58,17 +57,21 @@
   flex-flow: column wrap;
   justify-content: center;
   padding: 0 1rem;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-family: 'Kalam';
   text-align: center;
   width: 95%;
 
   @include media(sm) {
     padding: auto 1rem;
-    // font-size: 0.9rem;
     font-family: 'Kalam';
     text-align: left;
     width: 95%;
+  }
+
+  @include media(md) {
+    font-size: 1rem;
+
   }
 
 
@@ -77,22 +80,19 @@
     text-align: center;
     display: block;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
+
+    @include media(xsSm) {
+      font-size: 1.1rem;
+    }
 
     @include media(md) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     @include media(lg) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
-
-    @include media(xl) {}
-
-
-    @include media(lg) {}
-
-    @include media(xl) {}
 
     &::after {
       content: "";
@@ -101,28 +101,28 @@
       height: 0.5rem;
       background: url("../../Public/Images/ridhtstraightDelicePap.svg") center center /contain no-repeat;
 
-      transform: translate(11rem, -1rem);
+      transform: translate(11.5rem, -1.1rem);
 
       @include media(xsSm) {
-        transform: translate(14rem, -1rem);
+        transform: translate(14rem, -1.2rem);
       }
 
       @include media(sm) {
-        transform: translate(20.5rem, -1rem);
+        transform: translate(20.5rem, -1.2rem);
       }
 
       @include media(md) {
-        transform: translate(23.7rem, -1rem);
+        transform: translate(23.7rem, -1.2rem);
         height: 0.4rem;
       }
 
       @include media(lg) {
-        transform: translate(30.2rem, -1rem);
+        transform: translate(30.2rem, -1.3rem);
         height: 0.5rem;
       }
 
       @include media(xl) {
-        transform: translate(34.7rem, -1rem);
+        transform: translate(34.7rem, -1.3rem);
       }
     }
 
@@ -133,9 +133,7 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftstraightDelicePap.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
-
-
+      transform: translate(-2.2rem, 1rem);
 
       @include media(sm) {
         transform: translate(-1.3rem, 1rem);
@@ -152,22 +150,19 @@
     text-align: center;
     display: block;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
+
+    @include media(xsSm) {
+      font-size: 1.1rem;
+    }
 
     @include media(md) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     @include media(lg) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
-
-    @include media(xl) {}
-
-
-    @include media(lg) {}
-
-    @include media(xl) {}
 
     &::after {
       content: "";
@@ -176,28 +171,29 @@
       height: 0.5rem;
       background: url("../../Public/Images/ridhtstraightDelicePapDish.svg") center center /contain no-repeat;
 
-      transform: translate(11rem, -1rem);
+
+      transform: translate(11.5rem, -1.1rem);
 
       @include media(xsSm) {
-        transform: translate(14rem, -1rem);
+        transform: translate(14rem, -1.2rem);
       }
 
       @include media(sm) {
-        transform: translate(20.5rem, -1rem);
+        transform: translate(20.5rem, -1.2rem);
       }
 
       @include media(md) {
-        transform: translate(23.7rem, -1rem);
+        transform: translate(23.7rem, -1.2rem);
         height: 0.4rem;
       }
 
       @include media(lg) {
-        transform: translate(30.2rem, -1rem);
+        transform: translate(30.2rem, -1.3rem);
         height: 0.5rem;
       }
 
       @include media(xl) {
-        transform: translate(34.7rem, -1rem);
+        transform: translate(34.7rem, -1.3rem);
       }
     }
 
@@ -208,9 +204,7 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftstraightDelicePapDish.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
-
-
+      transform: translate(-2.2rem, 1rem);
 
       @include media(sm) {
         transform: translate(-1.3rem, 1rem);
@@ -227,22 +221,19 @@
     text-align: center;
     display: block;
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: 1rem;
+
+    @include media(xsSm) {
+      font-size: 1.1rem;
+    }
 
     @include media(md) {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     @include media(lg) {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
-
-    @include media(xl) {}
-
-
-    @include media(lg) {}
-
-    @include media(xl) {}
 
     &::after {
       content: "";
@@ -251,28 +242,29 @@
       height: 0.5rem;
       background: url("../../Public/Images/ridhtstraightDelicePapDessert.svg") center center /contain no-repeat;
 
-      transform: translate(11rem, -1rem);
+
+      transform: translate(11.5rem, -1.1rem);
 
       @include media(xsSm) {
-        transform: translate(14rem, -1rem);
+        transform: translate(14rem, -1.2rem);
       }
 
       @include media(sm) {
-        transform: translate(20.5rem, -1rem);
+        transform: translate(20.5rem, -1.2rem);
       }
 
       @include media(md) {
-        transform: translate(23.7rem, -1rem);
+        transform: translate(23.7rem, -1.2rem);
         height: 0.4rem;
       }
 
       @include media(lg) {
-        transform: translate(30.2rem, -1rem);
+        transform: translate(30.2rem, -1.3rem);
         height: 0.5rem;
       }
 
       @include media(xl) {
-        transform: translate(34.7rem, -1rem);
+        transform: translate(34.7rem, -1.3rem);
       }
     }
 
@@ -283,7 +275,7 @@
       width: 30%;
       height: 0.5rem;
       background: url("../../Public/Images/leftstraightDelicePapDessert.svg") center center /contain no-repeat;
-      transform: translate(-1.9rem, 1rem);
+      transform: translate(-2.2rem, 1rem);
 
 
 
