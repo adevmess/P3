@@ -170,19 +170,19 @@ a {
   overflow: hidden;
 }
 
-.card.--backNote {
+.card.m--backNote {
   background: #fcdfdb;
 }
 
-.card.--backChic {
+.card.m--backChic {
   background: #fff5fe;
 }
 
-.card.--backDelice {
+.card.m--backDelice {
   background: #f9f9f9;
 }
 
-.card.--backPalette {
+.card.m--backPalette {
   background: #fdfffd;
 }
 
@@ -248,6 +248,7 @@ a {
   font-family: 'Croissant One';
   font-weight: 100;
   font-size: 0.9rem;
+  color: #e38913;
   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -300,6 +301,7 @@ a {
 .card > .card__headingDelice {
   font-family: 'Dancing Script';
   font-weight: 100;
+  color: #0022db;
   background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -355,6 +357,7 @@ a {
 .card > .card__headingPalette {
   font-family: 'Kaushan Script';
   font-weight: 100;
+  color: #62b24e;
   background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -439,7 +442,7 @@ a {
           transition-delay: 0s;
 }
 
-.card.--zoom:hover {
+.card.m--zoom:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   opacity: 0.4;
@@ -482,11 +485,11 @@ a {
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: #579c87;
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: #fdcb46;
 }
 
@@ -676,19 +679,19 @@ footer > div > a {
           animation: ball 260ms 10s ease-in-out alternate infinite;
 }
 
-.btn > .containerball > .containerball__ball.--cl1 {
+.btn > .containerball > .containerball__ball.m--cl1 {
   background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
 }
 
-.btn > .containerball > .containerball__ball.--cl2 {
+.btn > .containerball > .containerball__ball.m--cl2 {
   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
 }
 
-.btn > .containerball > .containerball__ball.--cl3 {
+.btn > .containerball > .containerball__ball.m--cl3 {
   background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
 }
 
-.btn > .containerball > .containerball__ball.--cl4 {
+.btn > .containerball > .containerball__ball.m--cl4 {
   background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
 }
 

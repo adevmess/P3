@@ -34,7 +34,8 @@
     font-size: 1.3rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+    color: #e38913;
+     background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
     background-clip: text;
     -webkit-background-clip: text;
     padding-bottom: 1rem;
@@ -42,7 +43,7 @@
 
     @include media(sm) {
       font-size: 1.7rem;
-      ;
+
     }
 
     @include media(md) {
@@ -327,19 +328,19 @@
 
 
 
-.--backChic {
+.m--backChic {
   background: map-get($palettes, backChic);
 }
 
-.--starter {
+.m--starter {
   color: map-get($palettes, textChicSection1);
 }
 
-.--dish {
+.m--dish {
   color: map-get($palettes, textChicSection2);
 }
 
-.--dessert {
+.m--dessert {
   color: map-get($palettes, textChicSection3);
 }
 

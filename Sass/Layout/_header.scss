@@ -27,12 +27,12 @@
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: map-get($palettes, outlinePrimary);
 
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: map-get($palettes, outlineTextPrimary);
 
 }

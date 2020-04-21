@@ -142,6 +142,7 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding-right: 0.5rem;
+  color: #e38913;
   background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -548,19 +549,19 @@ a {
   }
 }
 
-.--backChic {
+.m--backChic {
   background: #fff5fe;
 }
 
-.--starter {
+.m--starter {
   color: #c77412;
 }
 
-.--dish {
+.m--dish {
   color: #a56799;
 }
 
-.--dessert {
+.m--dessert {
   color: #6e4ccc;
 }
 
@@ -616,11 +617,11 @@ h3 > .underline:hover {
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: #579c87;
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: #fdcb46;
 }
 

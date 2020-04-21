@@ -140,8 +140,9 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
   padding-right: 0.5rem;
+  color: #0022db;
   background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-  background-clip: text;
+  background-clip: content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -530,11 +531,11 @@ a {
   }
 }
 
-.sect.--dessert {
+.sect.m--dessert {
   padding-bottom: 6rem;
 }
 
-.--backDelice {
+.m--backDelice {
   background: #f9f9f9;
 }
 
@@ -590,11 +591,11 @@ h3 > .underline:hover {
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: #579c87;
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: #fdcb46;
 }
 

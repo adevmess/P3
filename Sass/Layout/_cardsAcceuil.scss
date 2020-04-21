@@ -52,23 +52,23 @@
 .card {
   overflow: hidden;
 
-  &.--backNote {
+  &.m--backNote {
 
     background: map-get($palettes, backNote);
 
 
   }
 
-  &.--backChic {
+  &.m--backChic {
     background: map-get($palettes, backChic);
   }
 
-  &.--backDelice {
+  &.m--backDelice {
     background: map-get($palettes, backDelice);
 
   }
 
-  &.--backPalette {
+  &.m--backPalette {
     background: map-get($palettes, backPalette);
 
   }
@@ -125,6 +125,7 @@
     font-family: 'Croissant One';
     font-weight: 100;
     font-size: 0.9rem;
+    color: #e38913;
     background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -166,6 +167,7 @@
   &>.card__headingDelice {
     font-family: 'Dancing Script';
     font-weight: 100;
+    color: #0022db;
     background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -209,6 +211,7 @@
   &>.card__headingPalette {
     font-family: 'Kaushan Script';
     font-weight: 100;
+    color: #62b24e;
     background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -273,7 +276,7 @@
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
 
-  &.--zoom:hover {
+  &.m--zoom:hover {
 
     transform: scale(1.3);
     opacity: (.4);

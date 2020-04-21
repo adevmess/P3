@@ -141,6 +141,7 @@ a {
           box-shadow: none;
   padding-right: 0.5rem;
   font-family: 'Kaushan Script';
+  color: #62b24e;
   background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -337,11 +338,11 @@ a {
   }
 }
 
-.sect.--dessert {
+.sect.m--dessert {
   padding-bottom: 6rem;
 }
 
-.--backPalette {
+.m--backPalette {
   background: #fdfffd;
 }
 
@@ -397,11 +398,11 @@ h3 > .underline:hover {
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: #579c87;
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: #fdcb46;
 }
 

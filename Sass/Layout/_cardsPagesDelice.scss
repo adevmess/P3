@@ -32,8 +32,9 @@
     font-size: 2rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-    background-clip: text;
+    color: #0022db;
+     background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+    background-clip: content;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -63,8 +64,8 @@
   width: 95%;
 
   @include media(sm) {
-    padding-left:1rem;
-    padding-right:1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Kalam';
     text-align: left;
     width: 95%;
@@ -325,14 +326,14 @@
     @include media(xl) {}
   }
 
-  &.--dessert {
+  &.m--dessert {
     padding-bottom: 6rem;
 
   }
 }
 
 
-.--backDelice {
+.m--backDelice {
   background: map-get($palettes, backDelice);
 
 }

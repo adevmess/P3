@@ -123,7 +123,7 @@ a {
   cursor: pointer;
 }
 
-.card.--backNote {
+.card.m--backNote {
   background: #fcdfdb;
 }
 
@@ -419,11 +419,11 @@ h3 > .underline:hover {
   }
 }
 
-.--outlinePrimary {
+.m--outlinePrimary {
   background: #579c87;
 }
 
-.--outlineTextPrimary {
+.m--outlineTextPrimary {
   color: #fdcb46;
 }
 

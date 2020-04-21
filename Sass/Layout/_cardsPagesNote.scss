@@ -18,7 +18,7 @@
   box-shadow: $boxShadow;
   cursor: pointer;
 
-  &.--backNote {
+  &.m--backNote {
     background: map-get($palettes, backNote);
   }
 
