@@ -35,11 +35,11 @@
     box-shadow: none;
     padding-right: 0.5rem;
     font-family: 'Kaushan Script';
-    color: #fdcb46;
-     background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // color: #fdcb46;
+    //  background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
       font-size: 2.1rem;
@@ -53,6 +53,16 @@
       font-size: 2.6rem;
     }
   }
+}
+
+
+// SVG  //
+
+.svgHeader {
+
+  width: 300px;
+  height: 90px;
+  margin: auto;
 }
 
 .sect {

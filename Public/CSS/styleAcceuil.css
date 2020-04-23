@@ -166,8 +166,17 @@ a {
   }
 }
 
+.svgHeader {
+  width: 300px;
+  height: 50px;
+  margin: auto;
+}
+
 .card {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .card.m--backNote {
@@ -187,9 +196,10 @@ a {
 }
 
 .card > .card__headingNote {
+  display: block;
   font-family: 'Devonshire';
   font-weight: 100;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 @media only screen and (min-width: 511px) {
@@ -200,13 +210,20 @@ a {
 
 @media only screen and (min-width: 760px) {
   .card > .card__headingNote {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .card > .card__headingNote {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .card > .card__headingNote {
+    font-size: 1.5rem;
   }
 }
 
@@ -222,37 +239,45 @@ a {
   text-transform: uppercase;
   font-family: 'Kalam', cursive;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin-top: 0;
 }
 
 @media only screen and (min-width: 511px) {
   .card > .card__subHeadingNote {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-width: 760px) {
   .card > .card__subHeadingNote {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    margin-bottom: 4.5rem;
+    padding-top: 1rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .card > .card__subHeadingNote {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 6.2rem;
+    padding-top: 0.4rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .card > .card__subHeadingNote {
+    margin-bottom: 4rem;
+    padding-top: 1rem;
   }
 }
 
 .card > .card__headingChic {
+  width: 100%;
+  margin: 0 auto;
   font-family: 'Croissant One';
   font-weight: 100;
-  font-size: 0.9rem;
-  color: #e38913;
-  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 511px) {
@@ -263,20 +288,25 @@ a {
 
 @media only screen and (min-width: 760px) {
   .card > .card__headingChic {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .card > .card__headingChic {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .card > .card__headingChic {
+    font-size: 0.95rem;
   }
 }
 
 .card > .card__subHeadingChic {
   font-family: 'Noto Serif';
   font-size: 1.6rem;
-  margin-top: 0;
   color: #e38913;
 }
 
@@ -298,16 +328,17 @@ a {
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  .card > .card__subHeadingChic {
+    margin-top: 1rem;
+  }
+}
+
 .card > .card__headingDelice {
   font-family: 'Dancing Script';
   font-weight: 100;
-  color: #0022db;
-  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   padding-left: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 511px) {
@@ -324,7 +355,13 @@ a {
 
 @media only screen and (min-width: 900px) {
   .card > .card__headingDelice {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .card > .card__headingDelice {
+    font-size: 1.5rem;
   }
 }
 
@@ -354,15 +391,16 @@ a {
   }
 }
 
+@media only screen and (min-width: 1300px) {
+  .card > .card__subHeadingDelice {
+    font-size: 2rem;
+  }
+}
+
 .card > .card__headingPalette {
   font-family: 'Kaushan Script';
   font-weight: 100;
-  color: #62b24e;
-  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 511px) {
@@ -373,13 +411,19 @@ a {
 
 @media only screen and (min-width: 760px) {
   .card > .card__headingPalette {
-    font-size: 1.45rem;
+    font-size: 1.7rem;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .card > .card__headingPalette {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .card > .card__headingPalette {
+    font-size: 1.5rem;
   }
 }
 
