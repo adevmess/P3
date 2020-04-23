@@ -100,6 +100,30 @@ a {
   }
 }
 
+.svgHeader {
+  width: 240px;
+  height: 70px;
+  margin: auto;
+}
+
+@media only screen and (min-width: 470px) {
+  .svgHeader {
+    width: 255px;
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .svgHeader {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .svgHeader {
+    width: 315px;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,11 +165,6 @@ a {
           box-shadow: none;
   padding-right: 0.5rem;
   font-family: 'Kaushan Script';
-  color: #62b24e;
-  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (min-width: 470px) {

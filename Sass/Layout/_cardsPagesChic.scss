@@ -8,13 +8,33 @@
 
 }
 
+// SVG  //
+
+.svgHeader {
+
+  width: 240px;
+  height: 70px;
+  margin: auto;
+
+  @include media(xsSm) {
+    width: 255px;
+  }
+
+  @include media(sm) {
+    width: 310px;
+  }
+
+  @include media(md) {
+    width: 350px;
+  }
+}
+
 .card {
   font-family: 'Noto Serif';
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  flex: none;
   padding-top: 1rem;
   overflow: hidden;
   padding-bottom: 3.5rem;
@@ -34,12 +54,12 @@
     font-size: 1.3rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    color: #e38913;
-     background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    padding-bottom: 1rem;
-    -webkit-text-fill-color: transparent;
+    // color: #e38913;
+    // background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // padding-bottom: 1rem;
+    // -webkit-text-fill-color: transparent;
 
     @include media(sm) {
       font-size: 1.7rem;

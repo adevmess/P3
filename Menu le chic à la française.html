@@ -29,18 +29,29 @@
 <body>
   <!-- Header -->
   <header class="header m--outlinePrimary">
-    <h2 class="header header__heading m--outlineTextPrimary">
+    <h1 class="header header__heading m--outlineTextPrimary">
       <a href="./index.html">ohmyfood</a>
-    </h2>
+    </h1>
   </header>
 
   <!-- center -->
   <div class="containerMain">
-    <h1 class="containerMain__heading">Le chic à la française</h1>
-
+    <h2 class="containerMain__heading">Le chic à la française</h2>
     <!-- article  -->
     <article class="card m--backChic">
-      <h2 class="card card__headingChic">Le chic à la française</h2>
+      <h2 class="card card__headingChic"
+      ><svg class="svgHeader">
+        <defs>
+          <linearGradient id="bgChic" gradientTransform="rotate(171deg)">
+            <stop offset="25%" stop-color="#e38913 " />
+            <stop offset="70%" stop-color="#905bfd " />
+          </linearGradient>
+        </defs>
+        <text text-anchor="middle" x=50% y=50% fill="url(#bgChic)">
+          Le chic à la française
+        </text>
+      </svg>
+    </h2>
 
       <!-- section starter -->
       <section class="sect m--starter">

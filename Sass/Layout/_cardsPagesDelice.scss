@@ -7,6 +7,26 @@
   }
 }
 
+// SVG  //
+
+.svgHeader {
+
+  width: 240px;
+  height: 70px;
+  margin: auto;
+
+  @include media(xsSm) {
+    width: 255px;
+  }
+
+  @include media(sm) {
+    width: 300px;
+  }
+
+  @include media(md) {
+    width: 315px;
+  }
+}
 
 .card {
   display: flex;
@@ -32,11 +52,11 @@
     font-size: 2rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    color: #0022db;
-     background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-    background-clip: content;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // color: #0022db;
+    // background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+    // background-clip: content;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
       font-size: 2.1rem;
