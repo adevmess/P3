@@ -589,23 +589,23 @@ footer > div > a {
 
 @-webkit-keyframes wiggle {
   0% {
-    -webkit-transform: rotate(0.4deg);
-            transform: rotate(0.4deg);
+    -webkit-transform: rotate(0.7deg);
+            transform: rotate(0.7deg);
   }
   100% {
-    -webkit-transform: rotate(-0.4deg);
-            transform: rotate(-0.4deg);
+    -webkit-transform: rotate(-0.7deg);
+            transform: rotate(-0.7deg);
   }
 }
 
 @keyframes wiggle {
   0% {
-    -webkit-transform: rotate(0.4deg);
-            transform: rotate(0.4deg);
+    -webkit-transform: rotate(0.7deg);
+            transform: rotate(0.7deg);
   }
   100% {
-    -webkit-transform: rotate(-0.4deg);
-            transform: rotate(-0.4deg);
+    -webkit-transform: rotate(-0.7deg);
+            transform: rotate(-0.7deg);
   }
 }
 
@@ -724,19 +724,15 @@ footer > div > a {
 }
 
 .btn > .containerball > .containerball__ball.m--cl1 {
-  background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+  background: #fdcb46;
 }
 
 .btn > .containerball > .containerball__ball.m--cl2 {
-  background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+  background: #fdcb46;
 }
 
 .btn > .containerball > .containerball__ball.m--cl3 {
-  background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-}
-
-.btn > .containerball > .containerball__ball.m--cl4 {
-  background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
+  background: #fdcb46;
 }
 
 @media only screen and (min-width: 511px) {
@@ -761,21 +757,16 @@ footer > div > a {
 }
 
 .btn > .containerball > .containerball__ball--b1 {
-  -webkit-animation-delay: 5.065s;
-          animation-delay: 5.065s;
+  -webkit-animation-delay: 5.08667s;
+          animation-delay: 5.08667s;
 }
 
 .btn > .containerball > .containerball__ball--b2 {
-  -webkit-animation-delay: 5.13s;
-          animation-delay: 5.13s;
+  -webkit-animation-delay: 5.17333s;
+          animation-delay: 5.17333s;
 }
 
 .btn > .containerball > .containerball__ball--b3 {
-  -webkit-animation-delay: 5.195s;
-          animation-delay: 5.195s;
-}
-
-.btn > .containerball > .containerball__ball--b4 {
   -webkit-animation-delay: 5.26s;
           animation-delay: 5.26s;
 }

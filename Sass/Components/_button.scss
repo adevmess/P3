@@ -85,24 +85,20 @@
       animation: ball $animDur 10s ease-in-out alternate infinite;
 
       &.m--cl1 {
-        background: linear-gradient(171deg, #F04E5F 25%, #F6916A 70%);
+        background: #fdcb46;
 
       }
 
       &.m--cl2 {
-        background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
+        background: #fdcb46;
 
       }
 
       &.m--cl3 {
-        background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
+        background: #fdcb46;
 
       }
 
-      &.m--cl4 {
-        background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-
-      }
 
       @include media(sm) {
         width: $size;

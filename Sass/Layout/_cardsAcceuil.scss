@@ -179,7 +179,6 @@
   &>.card__subHeadingChic {
     font-family: 'Noto Serif';
     font-size: 1.6rem;
-    // padding-top: 0rem;
     color: #e38913;
 
     @include media(sm) {
@@ -204,11 +203,6 @@
   &>.card__headingDelice {
     font-family: 'Dancing Script';
     font-weight: 100;
-    // color: #0022db;
-    // background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     padding-left: 0.5rem;
     font-size: 1.5rem;
 
@@ -256,11 +250,6 @@
   &>.card__headingPalette {
     font-family: 'Kaushan Script';
     font-weight: 100;
-    // color: #62b24e;
-    // background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
 
     @include media(sm) {
@@ -313,7 +302,6 @@
     font-size: 2rem;
   }
 }
-
 
 
 .card {

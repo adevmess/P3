@@ -37,11 +37,11 @@
 @mixin wiggle {
   @keyframes wiggle {
     0% {
-      transform: rotate(0.4deg);
+      transform: rotate(0.7deg);
     }
 
     100% {
-      transform: rotate(-0.4deg);
+      transform: rotate(-0.7deg);
     }
   }
 
