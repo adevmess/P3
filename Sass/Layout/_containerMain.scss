@@ -24,6 +24,11 @@
     max-width: map-get($containerMaxWidths, lg);
   }
 
+  @include media(lgPlus) {
+    padding: 3rem 0;
+    max-width: map-get($containerMaxWidths, lgPlus);
+  }
+
   @include media(xl) {
     max-width: map-get($containerMaxWidths, xl);
     display: flex;

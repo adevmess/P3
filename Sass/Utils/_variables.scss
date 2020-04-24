@@ -36,18 +36,22 @@ $breakpoints: (
   sm:(min-width: 511px),
 
   /* ************* Medium devices ******** */
-  md:(min-width: 760px),
+  md:(min-width: 777px),
   /* ********** Large devices ******** */
-  lg:(min-width: 900px),
+  lg:(min-width: 925px),
+
+  /* ********** largePlus devices ******** */
+  lgPlus:(min-width: 1100px),
 
   /* ********** ExtraLarge devices ******** */
   xl: (min-width: 1300px));
 
 $containerMaxWidths: (xs: 500px,
   sm: 600px,
-  md: 730px,
-  lg: 900px,
-  xl: 1450px);
+  md: 800px,
+  lg: 960px,
+  lgPlus:1100px,
+  xl: 1280px);
 
 
 
@@ -64,4 +68,4 @@ $minwidth:12.5rem;
 // animation
 $animDur:260ms;
 $numBall:3;
-$size:0.6rem;
+$size:0.5rem;

@@ -58,23 +58,30 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .containerMain {
     padding: 3rem 0;
-    max-width: 730px;
+    max-width: 800px;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .containerMain {
     padding: 3rem 0;
-    max-width: 900px;
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .containerMain {
+    padding: 3rem 0;
+    max-width: 1100px;
   }
 }
 
 @media only screen and (min-width: 1300px) {
   .containerMain {
-    max-width: 1450px;
+    max-width: 1280px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,9 +128,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 18.2rem;
+  width: 19.6rem;
   min-width: 12.5rem;
-  height: 24.2rem;
+  height: 26.4rem;
   margin: 1.1rem;
   -webkit-box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
           box-shadow: 0px 0px 7px 1px rgba(119, 119, 119, 0.28);
@@ -133,36 +140,43 @@ a {
 
 @media only screen and (min-width: 511px) {
   .containerMain > .cards > .card {
-    height: 35.2rem;
+    height: 37.4rem;
     margin: 1.3rem;
     width: 26.6rem;
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .containerMain > .cards > .card {
     margin: 2.3rem 2.3rem;
-    width: 18.2rem;
-    height: 30.8rem;
+    width: 19.6rem;
+    height: 28.6rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .containerMain > .cards > .card {
-    width: 22.4rem;
-    height: 39.6rem;
+    width: 23.8rem;
+    height: 35.2rem;
     margin: 2.5rem 2.5rem;
     font-size: 1.3rem;
   }
 }
 
+@media only screen and (min-width: 1100px) {
+  .containerMain > .cards > .card {
+    width: 28rem;
+    height: 41.8rem;
+    margin: 2.5rem 2.5rem;
+    font-size: 1.4rem;
+  }
+}
+
 @media only screen and (min-width: 1300px) {
   .containerMain > .cards > .card {
-    width: 14rem;
-    height: 26.4rem;
-    font-size: 1.3rem;
-    margin: 1rem 2.5rem;
-    text-align: center;
+    width: 30.8rem;
+    height: 44rem;
+    margin: 2.5rem 2.5rem;
   }
 }
 
@@ -170,6 +184,12 @@ a {
   width: 300px;
   height: 60px;
   margin: auto;
+}
+
+@media only screen and (min-width: 1300px) {
+  .svgHeader {
+    width: 315px;
+  }
 }
 
 .card {
@@ -208,13 +228,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__headingNote {
     font-size: 1.7rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__headingNote {
     font-size: 2.3rem;
     margin-bottom: 1.8rem;
@@ -223,7 +243,7 @@ a {
 
 @media only screen and (min-width: 1300px) {
   .card > .card__headingNote {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -249,7 +269,7 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__subHeadingNote {
     font-size: 1.8rem;
     margin-bottom: 4.5rem;
@@ -257,18 +277,11 @@ a {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__subHeadingNote {
     font-size: 1.8rem;
     margin-bottom: 6.2rem;
     padding-top: 0.4rem;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .card > .card__subHeadingNote {
-    margin-bottom: 4rem;
-    padding-top: 0.5rem;
   }
 }
 
@@ -286,21 +299,27 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__headingChic {
     font-size: 1.2rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__headingChic {
     font-size: 1.45rem;
   }
 }
 
+@media only screen and (min-width: 1100px) {
+  .card > .card__headingChic {
+    font-size: 1.65rem;
+  }
+}
+
 @media only screen and (min-width: 1300px) {
   .card > .card__headingChic {
-    font-size: 0.95rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -316,21 +335,15 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__subHeadingChic {
     font-size: 1.8rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__subHeadingChic {
     font-size: 1.9rem;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .card > .card__subHeadingChic {
-    margin-top: 1rem;
   }
 }
 
@@ -347,13 +360,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__headingDelice {
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__headingDelice {
     font-size: 2.3rem;
   }
@@ -361,7 +374,7 @@ a {
 
 @media only screen and (min-width: 1300px) {
   .card > .card__headingDelice {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -379,13 +392,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__subHeadingDelice {
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__subHeadingDelice {
     font-size: 2rem;
   }
@@ -409,13 +422,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__headingPalette {
     font-size: 1.7rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__headingPalette {
     font-size: 2.3rem;
   }
@@ -423,7 +436,7 @@ a {
 
 @media only screen and (min-width: 1300px) {
   .card > .card__headingPalette {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -441,13 +454,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card > .card__subHeadingPalette {
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card > .card__subHeadingPalette {
     font-size: 2rem;
   }
@@ -459,13 +472,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .card {
     font-size: 1.9rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .card {
     font-size: 2rem;
   }
@@ -510,13 +523,13 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .header.header__heading {
     font-size: 4.5rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .header.header__heading {
     font-size: 4.7rem;
   }
@@ -559,14 +572,14 @@ a {
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .footer {
     padding: 1.1rem;
     font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .footer {
     padding: 1.2rem;
     font-size: 1.5rem;
@@ -616,8 +629,7 @@ footer > div > a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 70%;
-  max-width: 70%;
+  width: 13rem;
   font-size: 1.1rem;
   cursor: pointer;
   border-radius: 0.6rem;
@@ -633,38 +645,28 @@ footer > div > a {
 @media only screen and (min-width: 511px) {
   .btn {
     font-size: 1.1rem;
-    width: 65%;
-    padding: 0.25em 1.5em;
+    width: 21rem;
+    padding: 0.25em 1em;
     font-size: 1.9rem;
     margin-bottom: 5rem;
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 777px) {
   .btn {
-    width: 70%;
-    padding: 0.3em 1.8em;
-    font-size: 2.5rem;
+    width: 22rem;
+    padding-left: 1.1em;
+    padding-right: 1em;
+    font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .btn {
-    width: 60%;
-    padding: 0.4em 2em;
-    font-size: 2.6rem;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .btn {
-    width: 50%;
-    padding: 0.5rem 1rem;
-    padding-left: 1rem;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    padding-left: 13rem;
+    width: 28rem;
+    padding-left: 1.8em;
+    padding-right: 1em;
+    font-size: 2.2rem;
   }
 }
 
@@ -679,7 +681,7 @@ footer > div > a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 10%;
-  padding-bottom: .3rem;
+  padding-bottom: .1rem;
   margin-right: 0.9rem;
   margin-left: 1rem;
 }
@@ -687,37 +689,28 @@ footer > div > a {
 @media only screen and (min-width: 511px) {
   .btn > .containerball {
     width: 10%;
-    margin-left: 2rem;
   }
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 510px) {
   .btn > .containerball {
-    margin-left: 3rem;
-    width: 20%;
-    padding-right: 2rem;
-    margin-bottom: 0.5rem;
+    width: 10%;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 925px) {
   .btn > .containerball {
-    width: 25%;
-    margin-left: 3rem;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .btn > .containerball {
-    margin-left: 3rem;
+    width: 10%;
+    margin-left: 0rem;
   }
 }
 
 .btn > .containerball > .containerball__ball {
-  width: 0.6rem;
+  width: 0.5rem;
   padding-left: 0.2rem;
-  height: 0.6rem;
+  height: 0.5rem;
   padding-left: 0.5rem;
+  margin-left: 0.1rem;
   border-radius: 50%;
   -webkit-animation: ball 260ms 10s ease-in-out alternate infinite;
           animation: ball 260ms 10s ease-in-out alternate infinite;
@@ -737,22 +730,16 @@ footer > div > a {
 
 @media only screen and (min-width: 511px) {
   .btn > .containerball > .containerball__ball {
+    margin-bottom: 0.3rem;
+    width: 0.5rem;
+    margin-left: 0.1rem;
+  }
+}
+
+@media only screen and (min-width: 925px) {
+  .btn > .containerball > .containerball__ball {
+    margin-left: 0rem;
     width: 0.6rem;
-    margin-left: 0.4rem;
-  }
-}
-
-@media only screen and (min-width: 760px) {
-  .btn > .containerball > .containerball__ball {
-    margin-left: 0.5rem;
-    width: 1.14rem;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .btn > .containerball > .containerball__ball {
-    margin-left: 0.5rem;
-    width: 1.14rem;
   }
 }
 

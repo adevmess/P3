@@ -1,8 +1,7 @@
 .btn {
   display: flex;
   justify-content: space-between;
-  width: 70%;
-  max-width: 70%;
+  width: 13rem;
   font-size: 1.1rem;
   cursor: pointer;
   border-radius: 0.6rem;
@@ -16,32 +15,34 @@
 
   @include media(sm) {
     font-size: 1.1rem;
-    width: 65%;
-    padding: 0.25em 1.5em;
+    width: 21rem;
+    padding: 0.25em 1em;
     font-size: $fontSize*1.9;
     margin-bottom: 5rem;
   }
 
   @include media(md) {
-    width: 70%;
-    padding: 0.3em 1.8em;
-    font-size: $fontSize*2.5;
+    width: 22rem;
+    padding-left: 1.1em;
+    padding-right: 1em;
+    font-size: $fontSize*2;
   }
 
   @include media(lg) {
-    width: 60%;
-    padding: 0.4em 2em;
-    font-size: $fontSize*2.6;
+    width: 28rem;
+    padding-left: 1.8em;
+    padding-right: 1em;
+    font-size: $fontSize*2.2;
   }
 
   @include media(xl) {
-    width: 50%;
-    padding: 0.5rem 1rem;
-    padding-left: 1rem;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    padding-left: 13rem;
+    // width: 50%;
+    // padding: 0.5rem 1rem;
+    // padding-left: 1rem;
+    // font-size: 2.5rem;
+    // margin-top: 2rem;
+    // margin-bottom: 5rem;
+    // padding-left: 13rem;
   }
 
   &>.containerball {
@@ -50,30 +51,36 @@
     justify-items: center;
     justify-content: space-around;
     width: 10%;
-    padding-bottom: .3rem;
+    padding-bottom: .1rem;
     margin-right: 0.9rem;
     margin-left: 1rem;
 
     @include media(sm) {
       width: 10%;
-      margin-left: 2rem;
+      // margin-left: 2rem;
+
+    }
+
+    @include media(xs) {
+      width: 10%;
+      // margin-left: 2rem;
 
     }
 
     @include media(md) {
-      margin-left: 3rem;
-      width: 20%;
-      padding-right: 2rem;
-      margin-bottom: 0.5rem;
+      // margin-left: 2rem;
+      // width: 20%;
+      // padding-right: 1.5rem;
+      // margin-bottom: 0.5rem;
     }
 
     @include media(lg) {
-      width: 25%;
-      margin-left: 3rem;
+      width: 10%;
+      margin-left: 0rem;
     }
 
     @include media(xl) {
-      margin-left: 3rem;
+      // margin-left: 3rem;
     }
 
     &>.containerball__ball {
@@ -81,6 +88,7 @@
       padding-left: 0.2rem;
       height: $size;
       padding-left: 0.5rem;
+      margin-left: 0.1rem;
       border-radius: 50%;
       animation: ball $animDur 10s ease-in-out alternate infinite;
 
@@ -101,18 +109,20 @@
 
 
       @include media(sm) {
+        margin-bottom: 0.3rem;
         width: $size;
-        margin-left: 0.4rem;
+        margin-left: 0.1rem;
       }
 
       @include media(md) {
-        margin-left: 0.5rem;
-        width: $size*1.9;
+
+        // width: $size*1.9;
+
       }
 
       @include media(lg) {
-        margin-left: 0.5rem;
-        width: $size*1.9;
+        margin-left: 0rem;
+        width: $size*1.2;
       }
 
       @for $i from 1 through $numBall {
