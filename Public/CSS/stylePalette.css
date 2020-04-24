@@ -468,7 +468,7 @@ h3 > .underline:hover {
   }
 }
 
-footer > div > a {
+.wiggle {
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-animation: wiggle .3s infinite;

@@ -52,11 +52,6 @@
     font-size: 2rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    // color: #0022db;
-    // background: linear-gradient(175deg, #0022db 40%, #1a91fb 70%);
-    // background-clip: content;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
       font-size: 2.1rem;
@@ -73,7 +68,6 @@
 }
 
 .sect {
-
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -93,7 +87,6 @@
 
   @include media(md) {
     font-size: 1rem;
-
   }
 
 
@@ -299,8 +292,6 @@
       background: url("../../Public/Images/leftstraightDelicePapDessert.svg") center center /contain no-repeat;
       transform: translate(-2.2rem, 1rem);
 
-
-
       @include media(sm) {
         transform: translate(-1.3rem, 1rem);
       }
@@ -342,8 +333,6 @@
       float: right;
 
     }
-
-    @include media(xl) {}
   }
 
   &.m--dessert {

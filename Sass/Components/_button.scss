@@ -35,16 +35,6 @@
     font-size: $fontSize*2.2;
   }
 
-  @include media(xl) {
-    // width: 50%;
-    // padding: 0.5rem 1rem;
-    // padding-left: 1rem;
-    // font-size: 2.5rem;
-    // margin-top: 2rem;
-    // margin-bottom: 5rem;
-    // padding-left: 13rem;
-  }
-
   &>.containerball {
     display: flex;
     align-items: flex-end;
@@ -57,30 +47,15 @@
 
     @include media(sm) {
       width: 10%;
-      // margin-left: 2rem;
-
     }
 
     @include media(xs) {
       width: 10%;
-      // margin-left: 2rem;
-
-    }
-
-    @include media(md) {
-      // margin-left: 2rem;
-      // width: 20%;
-      // padding-right: 1.5rem;
-      // margin-bottom: 0.5rem;
     }
 
     @include media(lg) {
       width: 10%;
       margin-left: 0rem;
-    }
-
-    @include media(xl) {
-      // margin-left: 3rem;
     }
 
     &>.containerball__ball {
@@ -112,12 +87,6 @@
         margin-bottom: 0.3rem;
         width: $size;
         margin-left: 0.1rem;
-      }
-
-      @include media(md) {
-
-        // width: $size*1.9;
-
       }
 
       @include media(lg) {

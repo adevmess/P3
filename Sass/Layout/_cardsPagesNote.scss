@@ -8,7 +8,6 @@
 
 }
 
-
 .card {
   display: flex;
   flex-flow: column;
@@ -57,8 +56,6 @@
         width: 200%;
       }
     }
-
-
   }
 }
 
@@ -167,7 +164,6 @@
       content: attr(data-count);
       float: right;
       padding: 0 1rem;
-
     }
 
     @include media(md) {
@@ -179,7 +175,6 @@
     @include media(lg) {
       content: attr(data-count);
       float: right;
-
     }
 
     @include media(xl) {}

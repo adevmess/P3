@@ -53,11 +53,6 @@
     box-shadow: none;
     padding-right: 0.5rem;
     font-family: 'Kaushan Script';
-    // color: #62b24e;
-    // background: linear-gradient(160deg, #62b24e 40%, #bfff7e 62%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
       font-size: 2.1rem;
@@ -199,8 +194,6 @@
       float: right;
 
     }
-
-    @include media(xl) {}
   }
 
   &.m--dessert {

@@ -8,14 +8,6 @@
 
 }
 
-// SVG  //
-
-.svgHeader {
-
-  width: 300px;
-  height: 50px;
-  margin: auto;
-}
 
 .card {
   display: flex;
@@ -25,7 +17,6 @@
   flex: none;
   padding-top: 1rem;
   overflow: hidden;
-
   margin-bottom: 3rem;
   box-shadow: $boxShadow;
   cursor: pointer;
@@ -43,11 +34,6 @@
     box-shadow: none;
     padding-right: 0.5rem;
     font-family: 'Kaushan Script';
-    // color: #fdcb46;
-    //  background: linear-gradient(160deg, #fdcb46 40%, #ffe7a7 62%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
 
     @include media(xsSm) {
       font-size: 2.1rem;
@@ -67,7 +53,6 @@
 // SVG  //
 
 .svgHeader {
-
   width: 300px;
   height: 90px;
   margin: auto;
@@ -75,7 +60,7 @@
 
 .sect {
 
-  &.m--dessert {
+  &.m--hebergeur {
     padding-bottom: 6rem;
 
   }
@@ -185,7 +170,6 @@
       content: attr(data-count);
       float: right;
       padding: 0 1rem;
-
     }
 
     @include media(md) {
@@ -197,17 +181,13 @@
     @include media(lg) {
       content: attr(data-count);
       float: right;
-
     }
 
-    @include media(xl) {}
   }
 }
 
-
 .m--backPalette {
   background: map-get($palettes, backPalette);
-
 }
 
 

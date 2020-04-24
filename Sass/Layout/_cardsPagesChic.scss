@@ -11,7 +11,6 @@
 // SVG  //
 
 .svgHeader {
-
   width: 240px;
   height: 70px;
   margin: auto;
@@ -54,16 +53,9 @@
     font-size: 1.3rem;
     box-shadow: none;
     padding-right: 0.5rem;
-    // color: #e38913;
-    // background: linear-gradient(171deg, #e38913 25%, #905bfd 70%);
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // padding-bottom: 1rem;
-    // -webkit-text-fill-color: transparent;
 
     @include media(sm) {
       font-size: 1.7rem;
-
     }
 
     @include media(md) {
@@ -104,7 +96,6 @@
 
     @include media(sm) {
       font-size: 1.2rem;
-
     }
 
     @include media(lg) {
@@ -330,7 +321,6 @@
       content: attr(data-count);
       float: right;
       padding: 0 1rem;
-
     }
 
     @include media(md) {
