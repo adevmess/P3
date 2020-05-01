@@ -96,7 +96,7 @@
 
       @for $i from 1 through $numBall {
         &--b#{$i} {
-          animation-delay: 5s+ ($animDur/$numBall)*$i;
+          animation-delay: ($animDur/$numBall)*$i;
         }
       }
     }

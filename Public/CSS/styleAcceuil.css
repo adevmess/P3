@@ -511,6 +511,7 @@ a {
 
 .header {
   text-align: center;
+  min-width: 20rem;
 }
 
 .header.header__heading {
@@ -748,18 +749,18 @@ a {
 }
 
 .btn > .containerball > .containerball__ball--b1 {
-  -webkit-animation-delay: 5.08667s;
-          animation-delay: 5.08667s;
+  -webkit-animation-delay: 86.66667ms;
+          animation-delay: 86.66667ms;
 }
 
 .btn > .containerball > .containerball__ball--b2 {
-  -webkit-animation-delay: 5.17333s;
-          animation-delay: 5.17333s;
+  -webkit-animation-delay: 173.33333ms;
+          animation-delay: 173.33333ms;
 }
 
 .btn > .containerball > .containerball__ball--b3 {
-  -webkit-animation-delay: 5.26s;
-          animation-delay: 5.26s;
+  -webkit-animation-delay: 260ms;
+          animation-delay: 260ms;
 }
 
 @-webkit-keyframes ball {

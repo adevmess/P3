@@ -382,6 +382,7 @@ h3 > .underline:hover {
 
 .header {
   text-align: center;
+  min-width: 20rem;
 }
 
 .header.header__heading {
